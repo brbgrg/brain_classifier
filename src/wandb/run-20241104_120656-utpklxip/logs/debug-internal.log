@@ -1,0 +1,23 @@
+{"time":"2024-11-04T12:06:56.2972219+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-04T12:06:56.2972219+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241104_120656-utpklxip\\logs\\debug-core.log"}
+{"time":"2024-11-04T12:06:56.7241759+01:00","level":"INFO","msg":"created new stream","id":"utpklxip"}
+{"time":"2024-11-04T12:06:56.7243934+01:00","level":"INFO","msg":"stream: started","id":"utpklxip"}
+{"time":"2024-11-04T12:06:56.7243934+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"utpklxip"}}
+{"time":"2024-11-04T12:06:56.7245576+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"utpklxip"}}
+{"time":"2024-11-04T12:06:56.7246232+01:00","level":"INFO","msg":"sender: started","stream_id":"utpklxip"}
+{"time":"2024-11-04T12:06:57.0061901+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-04T12:06:57.1900659+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T12:06:57.2070084+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T12:06:57.2103569+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T12:06:57.9351438+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T12:06:57.943021+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-04T12:07:00.1569124+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-04T12:07:14.8322791+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-04T12:07:14.8337446+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-04T12:07:15.8456673+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.6414328}],"total_operations":1}}
+{"time":"2024-11-04T12:07:16.1349993+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-04T12:07:17.4820379+01:00","level":"INFO","msg":"stream: closing","id":"utpklxip"}
+{"time":"2024-11-04T12:07:17.4820379+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"utpklxip"}}
+{"time":"2024-11-04T12:07:17.4820379+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"utpklxip"}}
+{"time":"2024-11-04T12:07:17.4820379+01:00","level":"INFO","msg":"sender: closed","stream_id":"utpklxip"}
+{"time":"2024-11-04T12:07:17.4820379+01:00","level":"INFO","msg":"stream: closed","id":"utpklxip"}

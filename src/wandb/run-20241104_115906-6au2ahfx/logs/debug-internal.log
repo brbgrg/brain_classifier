@@ -1,0 +1,17 @@
+{"time":"2024-11-04T11:59:11.3420604+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-04T11:59:11.3420604+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241104_115906-6au2ahfx\\logs\\debug-core.log"}
+{"time":"2024-11-04T11:59:11.4567229+01:00","level":"INFO","msg":"created new stream","id":"6au2ahfx"}
+{"time":"2024-11-04T11:59:11.4567229+01:00","level":"INFO","msg":"stream: started","id":"6au2ahfx"}
+{"time":"2024-11-04T11:59:11.4567229+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6au2ahfx"}}
+{"time":"2024-11-04T11:59:11.4567229+01:00","level":"INFO","msg":"sender: started","stream_id":"6au2ahfx"}
+{"time":"2024-11-04T11:59:11.4567229+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6au2ahfx"}}
+{"time":"2024-11-04T11:59:11.9817418+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-04T11:59:50.9313771+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-04T11:59:50.9323414+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-04T11:59:51.9352896+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.6656279},{"desc":"uploading config.yaml","runtime_seconds":0.445593,"progress":"838B/838B"},{"desc":"uploading output.log","runtime_seconds":0.445593,"progress":"19.5KB/19.5KB"}],"total_operations":3}}
+{"time":"2024-11-04T11:59:55.6217938+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-04T11:59:57.3215462+01:00","level":"INFO","msg":"stream: closing","id":"6au2ahfx"}
+{"time":"2024-11-04T11:59:57.3215462+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6au2ahfx"}}
+{"time":"2024-11-04T11:59:57.3215462+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6au2ahfx"}}
+{"time":"2024-11-04T11:59:57.3215462+01:00","level":"INFO","msg":"sender: closed","stream_id":"6au2ahfx"}
+{"time":"2024-11-04T11:59:57.3215462+01:00","level":"INFO","msg":"stream: closed","id":"6au2ahfx"}
