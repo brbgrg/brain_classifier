@@ -1,0 +1,23 @@
+{"time":"2024-11-07T13:53:57.5408321+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T13:53:57.5408321+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241107_135357-ip3u8oha\\logs\\debug-core.log"}
+{"time":"2024-11-07T13:53:58.4684274+01:00","level":"INFO","msg":"created new stream","id":"ip3u8oha"}
+{"time":"2024-11-07T13:53:58.4684274+01:00","level":"INFO","msg":"stream: started","id":"ip3u8oha"}
+{"time":"2024-11-07T13:53:58.4684274+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ip3u8oha"}}
+{"time":"2024-11-07T13:53:58.4684274+01:00","level":"INFO","msg":"sender: started","stream_id":"ip3u8oha"}
+{"time":"2024-11-07T13:53:58.4684274+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ip3u8oha"}}
+{"time":"2024-11-07T13:53:58.8456924+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:53:59.0364898+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T13:54:01.8706376+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T13:54:01.8761223+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T13:54:02.6509252+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T13:54:03.1152452+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T13:54:08.3607234+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T13:54:30.9011878+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:54:30.9016951+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:54:31.9101925+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7246223}],"total_operations":1}}
+{"time":"2024-11-07T13:54:33.8928818+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:54:35.170934+01:00","level":"INFO","msg":"stream: closing","id":"ip3u8oha"}
+{"time":"2024-11-07T13:54:35.170934+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ip3u8oha"}}
+{"time":"2024-11-07T13:54:35.170934+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ip3u8oha"}}
+{"time":"2024-11-07T13:54:35.170934+01:00","level":"INFO","msg":"sender: closed","stream_id":"ip3u8oha"}
+{"time":"2024-11-07T13:54:35.170934+01:00","level":"INFO","msg":"stream: closed","id":"ip3u8oha"}

@@ -1,0 +1,17 @@
+{"time":"2024-11-07T11:20:35.2642853+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T11:20:35.2642853+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241107_112030-d9og2xn4\\logs\\debug-core.log"}
+{"time":"2024-11-07T11:20:35.382961+01:00","level":"INFO","msg":"created new stream","id":"d9og2xn4"}
+{"time":"2024-11-07T11:20:35.382961+01:00","level":"INFO","msg":"stream: started","id":"d9og2xn4"}
+{"time":"2024-11-07T11:20:35.382961+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"d9og2xn4"}}
+{"time":"2024-11-07T11:20:35.382961+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"d9og2xn4"}}
+{"time":"2024-11-07T11:20:35.382961+01:00","level":"INFO","msg":"sender: started","stream_id":"d9og2xn4"}
+{"time":"2024-11-07T11:20:35.6847454+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T11:29:47.3764609+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T11:29:47.3769702+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T11:29:48.3870531+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-d9og2xn4-TrainingMetrics","runtime_seconds":1.0299715}],"total_operations":1}}
+{"time":"2024-11-07T11:29:51.8794191+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T11:29:53.1119552+01:00","level":"INFO","msg":"stream: closing","id":"d9og2xn4"}
+{"time":"2024-11-07T11:29:53.1119552+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"d9og2xn4"}}
+{"time":"2024-11-07T11:29:53.1119552+01:00","level":"INFO","msg":"sender: closed","stream_id":"d9og2xn4"}
+{"time":"2024-11-07T11:29:53.1119552+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"d9og2xn4"}}
+{"time":"2024-11-07T11:29:53.1119552+01:00","level":"INFO","msg":"stream: closed","id":"d9og2xn4"}
