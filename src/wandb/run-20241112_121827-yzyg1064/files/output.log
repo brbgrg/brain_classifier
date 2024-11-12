@@ -1,0 +1,320 @@
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [1/80], Train Loss: 0.6927, Val Loss: 0.6929, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [2/80], Train Loss: 0.6894, Val Loss: 0.6911, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [3/80], Train Loss: 0.6876, Val Loss: 0.6894, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [4/80], Train Loss: 0.6855, Val Loss: 0.6878, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [5/80], Train Loss: 0.6833, Val Loss: 0.6861, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [6/80], Train Loss: 0.6812, Val Loss: 0.6846, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [7/80], Train Loss: 0.6799, Val Loss: 0.6832, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [8/80], Train Loss: 0.6784, Val Loss: 0.6817, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [9/80], Train Loss: 0.6774, Val Loss: 0.6803, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [10/80], Train Loss: 0.6756, Val Loss: 0.6788, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [11/80], Train Loss: 0.6747, Val Loss: 0.6774, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [12/80], Train Loss: 0.6733, Val Loss: 0.6759, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [13/80], Train Loss: 0.6710, Val Loss: 0.6744, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [14/80], Train Loss: 0.6699, Val Loss: 0.6728, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [15/80], Train Loss: 0.6685, Val Loss: 0.6713, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [16/80], Train Loss: 0.6665, Val Loss: 0.6696, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [17/80], Train Loss: 0.6660, Val Loss: 0.6681, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [18/80], Train Loss: 0.6636, Val Loss: 0.6665, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [19/80], Train Loss: 0.6624, Val Loss: 0.6649, Train Accuracy: 0.5680, Val Accuracy: 0.5556, Train F1: 0.4115, Val F1: 0.3968
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [20/80], Train Loss: 0.6611, Val Loss: 0.6633, Train Accuracy: 0.5680, Val Accuracy: 0.5926, Train F1: 0.4115, Val F1: 0.4749
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [21/80], Train Loss: 0.6587, Val Loss: 0.6616, Train Accuracy: 0.5680, Val Accuracy: 0.5926, Train F1: 0.4115, Val F1: 0.4749
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [22/80], Train Loss: 0.6573, Val Loss: 0.6599, Train Accuracy: 0.5680, Val Accuracy: 0.5926, Train F1: 0.4115, Val F1: 0.4749
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [23/80], Train Loss: 0.6559, Val Loss: 0.6582, Train Accuracy: 0.5680, Val Accuracy: 0.5926, Train F1: 0.4115, Val F1: 0.4749
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [24/80], Train Loss: 0.6543, Val Loss: 0.6565, Train Accuracy: 0.5680, Val Accuracy: 0.5926, Train F1: 0.4115, Val F1: 0.4749
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [25/80], Train Loss: 0.6530, Val Loss: 0.6548, Train Accuracy: 0.5680, Val Accuracy: 0.6296, Train F1: 0.4115, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [26/80], Train Loss: 0.6511, Val Loss: 0.6531, Train Accuracy: 0.5760, Val Accuracy: 0.6296, Train F1: 0.4293, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [27/80], Train Loss: 0.6496, Val Loss: 0.6513, Train Accuracy: 0.5760, Val Accuracy: 0.6296, Train F1: 0.4293, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [28/80], Train Loss: 0.6477, Val Loss: 0.6496, Train Accuracy: 0.5760, Val Accuracy: 0.6296, Train F1: 0.4293, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [29/80], Train Loss: 0.6460, Val Loss: 0.6478, Train Accuracy: 0.5840, Val Accuracy: 0.6296, Train F1: 0.4466, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [30/80], Train Loss: 0.6442, Val Loss: 0.6459, Train Accuracy: 0.5840, Val Accuracy: 0.6296, Train F1: 0.4466, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [31/80], Train Loss: 0.6425, Val Loss: 0.6441, Train Accuracy: 0.5920, Val Accuracy: 0.6296, Train F1: 0.4634, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [32/80], Train Loss: 0.6401, Val Loss: 0.6422, Train Accuracy: 0.6000, Val Accuracy: 0.6296, Train F1: 0.4797, Val F1: 0.5437
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [33/80], Train Loss: 0.6388, Val Loss: 0.6403, Train Accuracy: 0.6000, Val Accuracy: 0.6667, Train F1: 0.4797, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [34/80], Train Loss: 0.6360, Val Loss: 0.6382, Train Accuracy: 0.6080, Val Accuracy: 0.6667, Train F1: 0.4955, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [35/80], Train Loss: 0.6345, Val Loss: 0.6362, Train Accuracy: 0.6160, Val Accuracy: 0.6667, Train F1: 0.5109, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [36/80], Train Loss: 0.6316, Val Loss: 0.6341, Train Accuracy: 0.6240, Val Accuracy: 0.6667, Train F1: 0.5259, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [37/80], Train Loss: 0.6299, Val Loss: 0.6319, Train Accuracy: 0.6240, Val Accuracy: 0.6667, Train F1: 0.5259, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [38/80], Train Loss: 0.6276, Val Loss: 0.6297, Train Accuracy: 0.6320, Val Accuracy: 0.6667, Train F1: 0.5405, Val F1: 0.6051
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [39/80], Train Loss: 0.6257, Val Loss: 0.6273, Train Accuracy: 0.6560, Val Accuracy: 0.7037, Train F1: 0.5822, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [40/80], Train Loss: 0.6223, Val Loss: 0.6250, Train Accuracy: 0.6640, Val Accuracy: 0.7037, Train F1: 0.5954, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [41/80], Train Loss: 0.6203, Val Loss: 0.6226, Train Accuracy: 0.6720, Val Accuracy: 0.7037, Train F1: 0.6084, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [42/80], Train Loss: 0.6180, Val Loss: 0.6202, Train Accuracy: 0.6800, Val Accuracy: 0.7037, Train F1: 0.6210, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [43/80], Train Loss: 0.6153, Val Loss: 0.6177, Train Accuracy: 0.6800, Val Accuracy: 0.7037, Train F1: 0.6269, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [44/80], Train Loss: 0.6123, Val Loss: 0.6150, Train Accuracy: 0.6800, Val Accuracy: 0.7037, Train F1: 0.6269, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [45/80], Train Loss: 0.6102, Val Loss: 0.6125, Train Accuracy: 0.6880, Val Accuracy: 0.7037, Train F1: 0.6390, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [46/80], Train Loss: 0.6074, Val Loss: 0.6098, Train Accuracy: 0.7040, Val Accuracy: 0.7037, Train F1: 0.6623, Val F1: 0.6608
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [47/80], Train Loss: 0.6046, Val Loss: 0.6070, Train Accuracy: 0.7120, Val Accuracy: 0.7407, Train F1: 0.6737, Val F1: 0.7119
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [48/80], Train Loss: 0.6017, Val Loss: 0.6042, Train Accuracy: 0.7200, Val Accuracy: 0.7407, Train F1: 0.6848, Val F1: 0.7119
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [49/80], Train Loss: 0.5991, Val Loss: 0.6013, Train Accuracy: 0.7280, Val Accuracy: 0.7407, Train F1: 0.6957, Val F1: 0.7119
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [50/80], Train Loss: 0.5953, Val Loss: 0.5983, Train Accuracy: 0.7280, Val Accuracy: 0.7778, Train F1: 0.6994, Val F1: 0.7593
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [51/80], Train Loss: 0.5934, Val Loss: 0.5953, Train Accuracy: 0.7200, Val Accuracy: 0.7778, Train F1: 0.6957, Val F1: 0.7593
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [52/80], Train Loss: 0.5898, Val Loss: 0.5921, Train Accuracy: 0.7200, Val Accuracy: 0.7778, Train F1: 0.6988, Val F1: 0.7593
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [53/80], Train Loss: 0.5870, Val Loss: 0.5890, Train Accuracy: 0.7280, Val Accuracy: 0.7778, Train F1: 0.7088, Val F1: 0.7593
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [54/80], Train Loss: 0.5845, Val Loss: 0.5858, Train Accuracy: 0.7280, Val Accuracy: 0.7778, Train F1: 0.7088, Val F1: 0.7593
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [55/80], Train Loss: 0.5810, Val Loss: 0.5826, Train Accuracy: 0.7440, Val Accuracy: 0.8148, Train F1: 0.7284, Val F1: 0.8037
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [56/80], Train Loss: 0.5779, Val Loss: 0.5793, Train Accuracy: 0.7440, Val Accuracy: 0.8519, Train F1: 0.7328, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [57/80], Train Loss: 0.5742, Val Loss: 0.5760, Train Accuracy: 0.7520, Val Accuracy: 0.8519, Train F1: 0.7421, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [58/80], Train Loss: 0.5719, Val Loss: 0.5728, Train Accuracy: 0.7520, Val Accuracy: 0.8519, Train F1: 0.7421, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [59/80], Train Loss: 0.5679, Val Loss: 0.5694, Train Accuracy: 0.7520, Val Accuracy: 0.8519, Train F1: 0.7421, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [60/80], Train Loss: 0.5646, Val Loss: 0.5662, Train Accuracy: 0.7520, Val Accuracy: 0.8519, Train F1: 0.7421, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [61/80], Train Loss: 0.5612, Val Loss: 0.5628, Train Accuracy: 0.7520, Val Accuracy: 0.8519, Train F1: 0.7421, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [62/80], Train Loss: 0.5588, Val Loss: 0.5594, Train Accuracy: 0.7680, Val Accuracy: 0.8519, Train F1: 0.7604, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [63/80], Train Loss: 0.5554, Val Loss: 0.5559, Train Accuracy: 0.7680, Val Accuracy: 0.8519, Train F1: 0.7604, Val F1: 0.8458
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [64/80], Train Loss: 0.5522, Val Loss: 0.5524, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [65/80], Train Loss: 0.5492, Val Loss: 0.5489, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [66/80], Train Loss: 0.5464, Val Loss: 0.5454, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [67/80], Train Loss: 0.5419, Val Loss: 0.5418, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [68/80], Train Loss: 0.5403, Val Loss: 0.5382, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [69/80], Train Loss: 0.5368, Val Loss: 0.5345, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [70/80], Train Loss: 0.5327, Val Loss: 0.5309, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [71/80], Train Loss: 0.5306, Val Loss: 0.5271, Train Accuracy: 0.7680, Val Accuracy: 0.8889, Train F1: 0.7604, Val F1: 0.8860
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [72/80], Train Loss: 0.5278, Val Loss: 0.5234, Train Accuracy: 0.7760, Val Accuracy: 0.8519, Train F1: 0.7694, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [73/80], Train Loss: 0.5248, Val Loss: 0.5197, Train Accuracy: 0.7840, Val Accuracy: 0.8519, Train F1: 0.7783, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [74/80], Train Loss: 0.5216, Val Loss: 0.5159, Train Accuracy: 0.7920, Val Accuracy: 0.8519, Train F1: 0.7871, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [75/80], Train Loss: 0.5168, Val Loss: 0.5123, Train Accuracy: 0.8000, Val Accuracy: 0.8519, Train F1: 0.7958, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [76/80], Train Loss: 0.5144, Val Loss: 0.5086, Train Accuracy: 0.8000, Val Accuracy: 0.8519, Train F1: 0.7958, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [77/80], Train Loss: 0.5127, Val Loss: 0.5050, Train Accuracy: 0.8000, Val Accuracy: 0.8519, Train F1: 0.7958, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [78/80], Train Loss: 0.5097, Val Loss: 0.5013, Train Accuracy: 0.8000, Val Accuracy: 0.8519, Train F1: 0.7958, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [79/80], Train Loss: 0.5075, Val Loss: 0.4976, Train Accuracy: 0.8000, Val Accuracy: 0.8519, Train F1: 0.7958, Val F1: 0.8497
+torch.Size([64, 96])
+torch.Size([61, 96])
+torch.Size([27, 96])
+Epoch [80/80], Train Loss: 0.5032, Val Loss: 0.4941, Train Accuracy: 0.8080, Val Accuracy: 0.8519, Train F1: 0.8045, Val F1: 0.8497

@@ -1,0 +1,17 @@
+{"time":"2024-11-12T12:24:18.9559467+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-12T12:24:18.95648+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241112_122415-xqrng5x7\\logs\\debug-core.log"}
+{"time":"2024-11-12T12:24:19.0731175+01:00","level":"INFO","msg":"created new stream","id":"xqrng5x7"}
+{"time":"2024-11-12T12:24:19.0731175+01:00","level":"INFO","msg":"stream: started","id":"xqrng5x7"}
+{"time":"2024-11-12T12:24:19.0731175+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xqrng5x7"}}
+{"time":"2024-11-12T12:24:19.0731175+01:00","level":"INFO","msg":"sender: started","stream_id":"xqrng5x7"}
+{"time":"2024-11-12T12:24:19.0731175+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xqrng5x7"}}
+{"time":"2024-11-12T12:24:19.4940423+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T12:26:31.1184256+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T12:26:31.1190601+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T12:26:32.1230893+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.3535892},{"desc":"uploading config.yaml","runtime_seconds":0.1455698,"progress":"856B/856B"},{"desc":"uploading output.log","runtime_seconds":0.1455698,"progress":"8.0KB/8.0KB"}],"total_operations":3}}
+{"time":"2024-11-12T12:26:32.6298418+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T12:26:34.4652273+01:00","level":"INFO","msg":"stream: closing","id":"xqrng5x7"}
+{"time":"2024-11-12T12:26:34.4652273+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xqrng5x7"}}
+{"time":"2024-11-12T12:26:34.4652273+01:00","level":"INFO","msg":"sender: closed","stream_id":"xqrng5x7"}
+{"time":"2024-11-12T12:26:34.4652273+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xqrng5x7"}}
+{"time":"2024-11-12T12:26:34.4657674+01:00","level":"INFO","msg":"stream: closed","id":"xqrng5x7"}

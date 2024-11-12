@@ -1,0 +1,21 @@
+{"time":"2024-11-09T15:51:34.4535515+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-09T15:51:34.4541882+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241109_155134-gbsjbvzk\\logs\\debug-core.log"}
+{"time":"2024-11-09T15:51:35.3750456+01:00","level":"INFO","msg":"created new stream","id":"gbsjbvzk"}
+{"time":"2024-11-09T15:51:35.3750456+01:00","level":"INFO","msg":"stream: started","id":"gbsjbvzk"}
+{"time":"2024-11-09T15:51:35.3750456+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"gbsjbvzk"}}
+{"time":"2024-11-09T15:51:35.3750456+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"gbsjbvzk"}}
+{"time":"2024-11-09T15:51:35.3750456+01:00","level":"INFO","msg":"sender: started","stream_id":"gbsjbvzk"}
+{"time":"2024-11-09T15:51:35.7781178+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-09T15:51:35.9461353+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T17:23:37.3839524+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T17:23:37.3960702+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T17:23:42.1189717+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T17:23:42.149021+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-09T17:23:42.1528744+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-09T17:23:43.0889504+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-09T17:23:43.1592733+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.0698267}],"total_operations":1}}
+{"time":"2024-11-09T17:23:44.3528352+01:00","level":"INFO","msg":"stream: closing","id":"gbsjbvzk"}
+{"time":"2024-11-09T17:23:44.3528352+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"gbsjbvzk"}}
+{"time":"2024-11-09T17:23:44.3528352+01:00","level":"INFO","msg":"sender: closed","stream_id":"gbsjbvzk"}
+{"time":"2024-11-09T17:23:44.3528352+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"gbsjbvzk"}}
+{"time":"2024-11-09T17:23:44.3533748+01:00","level":"INFO","msg":"stream: closed","id":"gbsjbvzk"}

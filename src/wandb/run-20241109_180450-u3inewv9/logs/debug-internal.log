@@ -1,0 +1,29 @@
+{"time":"2024-11-09T18:04:50.2253305+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-09T18:04:50.2258439+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241109_180450-u3inewv9\\logs\\debug-core.log"}
+{"time":"2024-11-09T18:04:50.7461292+01:00","level":"INFO","msg":"created new stream","id":"u3inewv9"}
+{"time":"2024-11-09T18:04:50.7461292+01:00","level":"INFO","msg":"stream: started","id":"u3inewv9"}
+{"time":"2024-11-09T18:04:50.7461292+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"u3inewv9"}}
+{"time":"2024-11-09T18:04:50.7461292+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"u3inewv9"}}
+{"time":"2024-11-09T18:04:50.7461292+01:00","level":"INFO","msg":"sender: started","stream_id":"u3inewv9"}
+{"time":"2024-11-09T18:04:51.1069277+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-09T18:04:51.5203783+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:04:53.5812448+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:04:53.5871343+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:06:07.5653321+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:06:07.5690277+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:06:32.9382938+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:06:32.941696+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:08:05.2012003+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:08:05.2251376+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:13:45.9694365+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:13:45.9746521+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:13:47.3740577+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:13:47.4088712+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-09T18:13:47.4106955+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-09T18:13:48.4217105+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.655086}],"total_operations":1}}
+{"time":"2024-11-09T18:13:50.1017204+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-09T18:13:51.338951+01:00","level":"INFO","msg":"stream: closing","id":"u3inewv9"}
+{"time":"2024-11-09T18:13:51.338951+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"u3inewv9"}}
+{"time":"2024-11-09T18:13:51.338951+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"u3inewv9"}}
+{"time":"2024-11-09T18:13:51.338951+01:00","level":"INFO","msg":"sender: closed","stream_id":"u3inewv9"}
+{"time":"2024-11-09T18:13:51.339477+01:00","level":"INFO","msg":"stream: closed","id":"u3inewv9"}

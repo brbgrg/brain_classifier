@@ -1,2 +1,23 @@
 {"time":"2024-11-07T15:28:15.1046304+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
 {"time":"2024-11-07T15:28:15.1051662+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241107_152815-vbbr8v1g\\logs\\debug-core.log"}
+{"time":"2024-11-07T15:28:15.6248057+01:00","level":"INFO","msg":"created new stream","id":"vbbr8v1g"}
+{"time":"2024-11-07T15:28:15.6248057+01:00","level":"INFO","msg":"stream: started","id":"vbbr8v1g"}
+{"time":"2024-11-07T15:28:15.6253098+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"vbbr8v1g"}}
+{"time":"2024-11-07T15:28:15.6253098+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"vbbr8v1g"}}
+{"time":"2024-11-07T15:28:15.6253098+01:00","level":"INFO","msg":"sender: started","stream_id":"vbbr8v1g"}
+{"time":"2024-11-07T15:28:16.0057636+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T15:28:16.1412575+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T15:28:16.1664583+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T15:28:16.170673+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T15:28:16.4842159+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T15:28:16.4933993+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-07T15:28:19.2737085+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-07T15:31:24.6681869+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T15:31:24.6687723+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T15:31:25.6693197+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.661883}],"total_operations":1}}
+{"time":"2024-11-07T15:31:26.1861575+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T15:31:27.4655594+01:00","level":"INFO","msg":"stream: closing","id":"vbbr8v1g"}
+{"time":"2024-11-07T15:31:27.4655594+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"vbbr8v1g"}}
+{"time":"2024-11-07T15:31:27.4655594+01:00","level":"INFO","msg":"sender: closed","stream_id":"vbbr8v1g"}
+{"time":"2024-11-07T15:31:27.4655594+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"vbbr8v1g"}}
+{"time":"2024-11-07T15:31:27.4655594+01:00","level":"INFO","msg":"stream: closed","id":"vbbr8v1g"}

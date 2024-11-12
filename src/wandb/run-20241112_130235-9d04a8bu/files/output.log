@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "c:\Users\barbo\brain classifier repo\brain_classifier\.venv\lib\site-packages\wandb\sdk\wandb_config.py", line 165, in __getattr__
+    return self.__getitem__(key)
+  File "c:\Users\barbo\brain classifier repo\brain_classifier\.venv\lib\site-packages\wandb\sdk\wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'in_channels'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\barbo\AppData\Local\Temp\ipykernel_33472\3518071905.py", line 26, in sweep_train
+    model = GAT(in_channels= config.in_channels, out_channels=config.out_channels, num_heads=config.num_heads).to(device)
+  File "c:\Users\barbo\brain classifier repo\brain_classifier\.venv\lib\site-packages\wandb\sdk\wandb_config.py", line 167, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'in_channels'

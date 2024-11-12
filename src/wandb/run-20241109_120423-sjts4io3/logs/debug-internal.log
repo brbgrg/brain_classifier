@@ -1,0 +1,19 @@
+{"time":"2024-11-09T12:04:28.2496514+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-09T12:04:28.2496514+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241109_120423-sjts4io3\\logs\\debug-core.log"}
+{"time":"2024-11-09T12:04:28.6611687+01:00","level":"INFO","msg":"created new stream","id":"sjts4io3"}
+{"time":"2024-11-09T12:04:28.6617415+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"sjts4io3"}}
+{"time":"2024-11-09T12:04:28.6617415+01:00","level":"INFO","msg":"sender: started","stream_id":"sjts4io3"}
+{"time":"2024-11-09T12:04:28.6617415+01:00","level":"INFO","msg":"stream: started","id":"sjts4io3"}
+{"time":"2024-11-09T12:04:28.6617415+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"sjts4io3"}}
+{"time":"2024-11-09T12:04:29.0732498+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-09T12:13:35.0296923+01:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/barbonigiorgia-sapienza-universit-di-roma/graph-classification/sjts4io3/file_stream"}
+{"time":"2024-11-09T12:13:42.7003807+01:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/barbonigiorgia-sapienza-universit-di-roma/graph-classification/sjts4io3/file_stream"}
+{"time":"2024-11-09T12:15:09.0845495+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-09T12:15:09.0972446+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-09T12:15:10.0868956+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.3275193,"progress":"24.7KB/24.7KB"},{"desc":"saving job artifact","runtime_seconds":0.2595094},{"desc":"uploading config.yaml","runtime_seconds":0.0477571,"progress":"857B/857B"},{"desc":"uploading output.log","runtime_seconds":0.0477571,"progress":"10.3KB/10.3KB"}],"total_operations":4}}
+{"time":"2024-11-09T12:15:14.2036461+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-09T12:15:15.5873949+01:00","level":"INFO","msg":"stream: closing","id":"sjts4io3"}
+{"time":"2024-11-09T12:15:15.5873949+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"sjts4io3"}}
+{"time":"2024-11-09T12:15:15.5873949+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"sjts4io3"}}
+{"time":"2024-11-09T12:15:15.5873949+01:00","level":"INFO","msg":"sender: closed","stream_id":"sjts4io3"}
+{"time":"2024-11-09T12:15:15.5873949+01:00","level":"INFO","msg":"stream: closed","id":"sjts4io3"}

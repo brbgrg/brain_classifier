@@ -1,0 +1,6 @@
+PyTorch version: 2.3.0+cu118
+CUDA available: True
+CUDA version: 11.8
+Number of GPUs: 1
+GPU Name: NVIDIA GeForce MX350
+Using device: cuda

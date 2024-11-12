@@ -1,0 +1,33 @@
+{"time":"2024-11-12T12:26:34.4742003+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-12T12:26:34.4742003+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241112_122631-1rmbxj6v\\logs\\debug-core.log"}
+{"time":"2024-11-12T12:26:34.5936468+01:00","level":"INFO","msg":"created new stream","id":"1rmbxj6v"}
+{"time":"2024-11-12T12:26:34.5941688+01:00","level":"INFO","msg":"stream: started","id":"1rmbxj6v"}
+{"time":"2024-11-12T12:26:34.5941688+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"1rmbxj6v"}}
+{"time":"2024-11-12T12:26:34.5941688+01:00","level":"INFO","msg":"sender: started","stream_id":"1rmbxj6v"}
+{"time":"2024-11-12T12:26:34.5941688+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1rmbxj6v"}}
+{"time":"2024-11-12T12:26:35.3766873+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T12:26:35.5603501+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:26:35.5844624+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:26:35.5899859+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:26:35.631658+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:26:35.6415606+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:26:35.672872+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:27:00.0161147+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:31:14.2863943+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:31:14.2951671+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:31:20.9235295+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:31:20.9309799+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:31:38.8513012+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:31:38.8556342+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:31:39.6727388+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:31:39.977708+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T12:31:53.9982698+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T12:31:54.0245345+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T12:31:54.0261586+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T12:31:55.0346604+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.3013361,"progress":"25.2KB/25.2KB"},{"desc":"saving job artifact","runtime_seconds":0.3002177},{"desc":"uploading config.yaml","runtime_seconds":0.0956084,"progress":"856B/856B"},{"desc":"uploading output.log","runtime_seconds":0.0956084,"progress":"2.4KB/2.4KB"}],"total_operations":4}}
+{"time":"2024-11-12T12:31:55.3209948+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T12:31:56.9935089+01:00","level":"INFO","msg":"stream: closing","id":"1rmbxj6v"}
+{"time":"2024-11-12T12:31:56.9935089+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"1rmbxj6v"}}
+{"time":"2024-11-12T12:31:56.9935089+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"1rmbxj6v"}}
+{"time":"2024-11-12T12:31:56.9935089+01:00","level":"INFO","msg":"sender: closed","stream_id":"1rmbxj6v"}
+{"time":"2024-11-12T12:31:56.9935089+01:00","level":"INFO","msg":"stream: closed","id":"1rmbxj6v"}

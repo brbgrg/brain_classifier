@@ -1,0 +1,17 @@
+{"time":"2024-11-12T12:31:57.0015321+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-12T12:31:57.0015321+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241112_123154-trzxvn3d\\logs\\debug-core.log"}
+{"time":"2024-11-12T12:31:57.1265701+01:00","level":"INFO","msg":"created new stream","id":"trzxvn3d"}
+{"time":"2024-11-12T12:31:57.1265701+01:00","level":"INFO","msg":"stream: started","id":"trzxvn3d"}
+{"time":"2024-11-12T12:31:57.1265701+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"trzxvn3d"}}
+{"time":"2024-11-12T12:31:57.1265701+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"trzxvn3d"}}
+{"time":"2024-11-12T12:31:57.1265701+01:00","level":"INFO","msg":"sender: started","stream_id":"trzxvn3d"}
+{"time":"2024-11-12T12:31:57.4781836+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T12:35:33.021251+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T12:35:33.0225459+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T12:35:34.0351468+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.2574009},{"desc":"uploading wandb-summary.json","runtime_seconds":0.2550428,"progress":"25.1KB/25.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.051855,"progress":"856B/856B"},{"desc":"uploading output.log","runtime_seconds":0.051855,"progress":"45.8KB/45.8KB"}],"total_operations":4}}
+{"time":"2024-11-12T12:35:37.3023886+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T12:35:38.847807+01:00","level":"INFO","msg":"stream: closing","id":"trzxvn3d"}
+{"time":"2024-11-12T12:35:38.847807+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"trzxvn3d"}}
+{"time":"2024-11-12T12:35:38.847807+01:00","level":"INFO","msg":"sender: closed","stream_id":"trzxvn3d"}
+{"time":"2024-11-12T12:35:38.847807+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"trzxvn3d"}}
+{"time":"2024-11-12T12:35:38.8483178+01:00","level":"INFO","msg":"stream: closed","id":"trzxvn3d"}

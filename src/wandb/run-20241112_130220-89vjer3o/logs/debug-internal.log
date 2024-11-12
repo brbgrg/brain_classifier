@@ -1,0 +1,17 @@
+{"time":"2024-11-12T13:02:20.4062673+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-12T13:02:20.4062673+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241112_130220-89vjer3o\\logs\\debug-core.log"}
+{"time":"2024-11-12T13:02:20.8378332+01:00","level":"INFO","msg":"created new stream","id":"89vjer3o"}
+{"time":"2024-11-12T13:02:20.8378332+01:00","level":"INFO","msg":"stream: started","id":"89vjer3o"}
+{"time":"2024-11-12T13:02:20.8378332+01:00","level":"INFO","msg":"sender: started","stream_id":"89vjer3o"}
+{"time":"2024-11-12T13:02:20.8378332+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"89vjer3o"}}
+{"time":"2024-11-12T13:02:20.8378332+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"89vjer3o"}}
+{"time":"2024-11-12T13:02:22.1840602+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T13:02:22.4018841+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T13:02:22.4029797+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T13:02:23.4094557+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.4276241},{"desc":"uploading output.log","runtime_seconds":0.22907,"progress":"983B/983B"},{"desc":"uploading config.yaml","runtime_seconds":0.22907,"progress":"762B/762B"}],"total_operations":3}}
+{"time":"2024-11-12T13:02:25.3351719+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T13:02:26.7567971+01:00","level":"INFO","msg":"stream: closing","id":"89vjer3o"}
+{"time":"2024-11-12T13:02:26.7567971+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"89vjer3o"}}
+{"time":"2024-11-12T13:02:26.7567971+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"89vjer3o"}}
+{"time":"2024-11-12T13:02:26.7567971+01:00","level":"INFO","msg":"sender: closed","stream_id":"89vjer3o"}
+{"time":"2024-11-12T13:02:26.7574219+01:00","level":"INFO","msg":"stream: closed","id":"89vjer3o"}

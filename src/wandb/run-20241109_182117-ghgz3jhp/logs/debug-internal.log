@@ -1,0 +1,29 @@
+{"time":"2024-11-09T18:21:19.8277826+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-09T18:21:19.8282955+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241109_182117-ghgz3jhp\\logs\\debug-core.log"}
+{"time":"2024-11-09T18:21:20.0629815+01:00","level":"INFO","msg":"created new stream","id":"ghgz3jhp"}
+{"time":"2024-11-09T18:21:20.0629815+01:00","level":"INFO","msg":"stream: started","id":"ghgz3jhp"}
+{"time":"2024-11-09T18:21:20.0629815+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ghgz3jhp"}}
+{"time":"2024-11-09T18:21:20.0629815+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ghgz3jhp"}}
+{"time":"2024-11-09T18:21:20.0629815+01:00","level":"INFO","msg":"sender: started","stream_id":"ghgz3jhp"}
+{"time":"2024-11-09T18:21:20.8043346+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-09T18:21:20.9660418+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:21.9758091+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:21:21.978651+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:25.3587547+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:21:25.3644204+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:27.5513903+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:21:27.5614671+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:31.0409528+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:21:31.0428419+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:33.5963131+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:21:33.6058408+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-09T18:21:44.0245829+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-09T18:26:12.7059096+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-09T18:26:12.7064313+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-09T18:26:13.7198614+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.5639884}],"total_operations":1}}
+{"time":"2024-11-09T18:26:15.3401896+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-09T18:26:16.8816975+01:00","level":"INFO","msg":"stream: closing","id":"ghgz3jhp"}
+{"time":"2024-11-09T18:26:16.8816975+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ghgz3jhp"}}
+{"time":"2024-11-09T18:26:16.8816975+01:00","level":"INFO","msg":"sender: closed","stream_id":"ghgz3jhp"}
+{"time":"2024-11-09T18:26:16.8816975+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ghgz3jhp"}}
+{"time":"2024-11-09T18:26:16.8816975+01:00","level":"INFO","msg":"stream: closed","id":"ghgz3jhp"}
