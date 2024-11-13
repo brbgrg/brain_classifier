@@ -1,6 +1,0 @@
-[34m[1mwandb[0m: [33mWARNING[0m Config item 'num_heads' was locked by 'sweep' (ignored update).
-[34m[1mwandb[0m: [33mWARNING[0m Config item 'learning_rate' was locked by 'sweep' (ignored update).
-[34m[1mwandb[0m: [33mWARNING[0m Config item 'num_epochs' was locked by 'sweep' (ignored update).
-Create sweep with ID: ggoyviyp
-Sweep URL: https://wandb.ai/barbonigiorgia-sapienza-universit-di-roma/graph-classification/sweeps/ggoyviyp
-[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

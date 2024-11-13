@@ -1,3 +1,0 @@
-Epoch [1/80], Train Loss: 0.5413, Val Loss: 0.5323, Train Accuracy: 0.7760, Val Accuracy: 0.8889, Train F1: 0.7707, Val F1: 0.8860
-Epoch [2/80], Train Loss: 0.5352, Val Loss: 0.5295, Train Accuracy: 0.7760, Val Accuracy: 0.8889, Train F1: 0.7707, Val F1: 0.8860
-Using device: cuda
