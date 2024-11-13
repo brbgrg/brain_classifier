@@ -9,6 +9,9 @@ sweep_config = {
         'optimizer': {
             'values': ['adam', 'sgd']
         },
+        'test_size': {
+            'value': 0.3
+        },
         'learning_rate': {
             'distribution': 'log_uniform_values',
             'min': 1e-5,
@@ -30,7 +33,7 @@ sweep_config = {
             'values': [8, 16, 32]
         },
         'random_state': {
-            'values': [42, 0, 100]
+            'value': 42
         }
     }
 }

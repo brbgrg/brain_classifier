@@ -1,72 +1,44 @@
-# data_utils.py
+from sklearn.model_selection import train_test_split
+from dgl.dataloading import GraphDataLoader
+import torch.optim as optim
+from preprocessing import normalize_features, scale_edge_weights, GraphDataset, collate_fn
 
-import torch
-import copy
-import dgl
-from torch.utils.data import Dataset
+def build_optimizer(network, optimizer, learning_rate):
+    if optimizer == "sgd":
+        optimizer = optim.SGD(network.parameters(),
+                              lr=learning_rate, momentum=0.9)
+    elif optimizer == "adam":
+        optimizer = optim.Adam(network.parameters(),
+                               lr=learning_rate)
+    return optimizer
 
-def normalize_features(graphs, mean=None, std=None):
-    """
-    Normalize node features. If mean and std are provided, use them;
-    otherwise, compute from the graphs.
-    Returns normalized graphs, mean, and std.
-    """
-    if mean is None or std is None:
-        # Compute mean and std from all graphs
-        all_features = torch.cat([graph.x for graph in graphs], dim=0)
-        mean = all_features.mean(dim=0)
-        std = all_features.std(dim=0)
+def build_dataloaders(graphs, labels, config):
+    # Split the data
+    train_graphs, temp_graphs, train_labels, temp_labels = train_test_split(
+        graphs, labels, test_size=config.test_size, random_state=config.random_state, stratify=labels
+    )
 
-    normalized_graphs = []
-    for graph in graphs:
-        normalized_x = (graph.x - mean) / (std + 1e-8)
-        normalized_graph = copy.deepcopy(graph)
-        normalized_graph.x = normalized_x
-        normalized_graphs.append(normalized_graph)
-    return normalized_graphs, mean, std
+    val_graphs, test_graphs, val_labels, test_labels = train_test_split(
+        temp_graphs, temp_labels, test_size=0.5, random_state=config.random_state, stratify=temp_labels
+    )
 
-def scale_edge_weights(graphs, min_weight=None, max_weight=None):
-    """
-    Scale edge weights. If min_weight and max_weight are provided, use them;
-    otherwise, compute from the graphs.
-    Returns scaled graphs, min_weight, and max_weight.
-    """
-    if min_weight is None or max_weight is None:
-        # Compute min and max from all graphs
-        all_edge_weights = torch.cat([graph.edge_attr for graph in graphs], dim=0)
-        min_weight = all_edge_weights.min().item()
-        max_weight = all_edge_weights.max().item()
+    # Preprocess graphs
+    normalized_train_graphs, normalized_val_graphs, normalized_test_graphs = normalize_features(
+        train_graphs, val_graphs, test_graphs
+    )
 
-    scaled_graphs = []
-    for graph in graphs:
-        scaled_weights = (graph.edge_attr - min_weight) / (max_weight - min_weight + 1e-8)
-        scaled_graph = copy.deepcopy(graph)
-        scaled_graph.edge_attr = scaled_weights
-        scaled_graphs.append(scaled_graph)
-    return scaled_graphs, min_weight, max_weight
+    scaled_train_graphs = scale_edge_weights(normalized_train_graphs)
+    scaled_val_graphs = scale_edge_weights(normalized_val_graphs)
+    scaled_test_graphs = scale_edge_weights(normalized_test_graphs)
+        
+    # Create Datasets
+    train_dataset = GraphDataset(scaled_train_graphs, train_labels)
+    val_dataset = GraphDataset(scaled_val_graphs, val_labels)
+    test_dataset = GraphDataset(scaled_test_graphs, test_labels)
 
-def to_dgl(pyg_data):
-    """Convert PyTorch Geometric Data to DGLGraph."""
-    g = dgl.graph((pyg_data.edge_index[0], pyg_data.edge_index[1]))
-    g.ndata['feat'] = pyg_data.x
-    g.edata['weight'] = pyg_data.edge_attr
-    return g
+    # Data loaders
+    train_loader = GraphDataLoader(train_dataset, batch_size=config.batch_size, shuffle=True, collate_fn=collate_fn)
+    val_loader = GraphDataLoader(val_dataset, batch_size=config.batch_size, shuffle=False, collate_fn=collate_fn)
+    test_loader = GraphDataLoader(test_dataset, batch_size=config.batch_size, shuffle=False, collate_fn=collate_fn)
 
-class GraphDataset(Dataset):
-    def __init__(self, graphs, labels):
-        self.graphs = [to_dgl(graph) for graph in graphs]
-        self.labels = torch.tensor(labels, dtype=torch.long)
-
-    def __len__(self):
-        return len(self.graphs)
-
-    def __getitem__(self, idx):
-        graph = self.graphs[idx]
-        label = self.labels[idx]
-        return graph, label
-
-def collate_fn(batch):
-    graphs, labels = zip(*batch)
-    batched_graph = dgl.batch(graphs)
-    labels = torch.tensor(labels)
-    return batched_graph, labels
+    return train_loader, val_loader, test_loader
