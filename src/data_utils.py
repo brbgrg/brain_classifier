@@ -3,13 +3,13 @@ from dgl.dataloading import GraphDataLoader
 import torch.optim as optim
 from preprocessing import normalize_features, scale_edge_weights, GraphDataset, collate_fn
 
-def build_optimizer(network, optimizer, learning_rate):
+def build_optimizer(network, optimizer, learning_rate, weight_decay):
     if optimizer == "sgd":
         optimizer = optim.SGD(network.parameters(),
-                              lr=learning_rate, momentum=0.9)
+                              lr=learning_rate, momentum=0.9, weight_decay=weight_decay)
     elif optimizer == "adam":
         optimizer = optim.Adam(network.parameters(),
-                               lr=learning_rate)
+                               lr=learning_rate, weight_decay=weight_decay)
     return optimizer
 
 def build_dataloaders(graphs, labels, config):

@@ -15,10 +15,6 @@ def train(train_loader, model, criterion, optimizer, device):
         labels = labels.to(device)
         x = data.ndata['feat']
         g = data
-        if 'weight' in g.edata:
-            g.edata['weight'] = g.edata['weight'].to(device)
-        else:
-            raise KeyError("Edge weights 'weight' not found in edge data.")
         optimizer.zero_grad()
         out = model(g, x)
         loss = criterion(out, labels)
@@ -39,16 +35,12 @@ def validate(val_loader, model, criterion, device):
     total_loss = 0
     all_preds = []
     all_labels = []
-    with torch.no_grad():
+    with torch.no_grad(): # prevent building unnecessary computational graphs that consume memory
         for batch_idx, (data, labels) in enumerate(val_loader):
             data = data.to(device)
             labels = labels.to(device)
             x = data.ndata['feat']
             g = data
-            if 'weight' in g.edata:
-                g.edata['weight'] = g.edata['weight'].to(device)
-            else:
-                raise KeyError("Edge weights 'weight' not found in edge data.")
             out = model(g, x)
             loss = criterion(out, labels)
             total_loss += loss.item()
@@ -72,10 +64,6 @@ def test(test_loader, model, criterion, device):
             labels = labels.to(device)
             x = data.ndata['feat']
             g = data
-            if 'weight' in g.edata:
-                g.edata['weight'] = g.edata['weight'].to(device)
-            else:
-                raise KeyError("Edge weights 'weight' not found in edge data.")
             out = model(g, x)
             loss = criterion(out, labels)
             total_loss += loss.item()

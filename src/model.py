@@ -26,7 +26,7 @@ class GATLayer(nn.Module):
         e = F.leaky_relu(a)
         
         # Multiply by edge weight
-        e = e * edges.data["weight"]
+        #e = e * edges.data["weight"]
         #print(edges.data["weight"])
         return {"e": e}
 

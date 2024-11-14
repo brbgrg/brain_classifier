@@ -4,7 +4,6 @@ import torch
 import torch.nn as nn
 import wandb
 from model import GAT  # Import the model from model.py
-from model import GAT
 from train_and_test import train, validate
 from data_utils import build_optimizer, build_dataloaders
 
@@ -13,7 +12,7 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
     sweep_id = wandb.sweep(sweep_config, project='graph-classification-' + dataset_name)
     # Function to execute a single run
     def train_sweep():
-        wandb.init()
+        wandb.init(config=sweep_config)
         config = wandb.config
 
         # Build data loaders
@@ -25,11 +24,10 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
             in_channels=config.in_channels, 
             out_channels=config.out_channels, 
             num_heads=config.num_heads, 
-            num_classes=config.num_classes
+            num_classes=2
         ).to(device)
         criterion = nn.CrossEntropyLoss()
-        optimizer = optimizer = build_optimizer(model, config.optimizer, config.learning_rate)
-
+        optimizer = build_optimizer(model, config.optimizer, config.learning_rate, config.weight_decay)
         # Watch the model with wandb
         wandb.watch(model, log="all", log_freq=10)
 
@@ -54,11 +52,18 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
                 best_val_accuracy = val_accuracy
                 torch.save({
                     'model_state_dict': model.state_dict(),
-                    'config': config
+                    'config': dict(config)
                 }, f'best_model_{dataset_name}.pth')
-                wandb.save(f'best_model_{dataset_name}.pth')
+                artifact = wandb.Artifact(f'best_model_{dataset_name}', type='model')
+                artifact.add_file(f'best_model_{dataset_name}.pth')
+                wandb.log_artifact(artifact)
 
+
+        del model
+        del optimizer
+        torch.cuda.empty_cache()
         # Finish the wandb run
         wandb.finish()
+        
 
-    wandb.agent(sweep_id, function=train_sweep)
+    wandb.agent(sweep_id, function=train_sweep, count=5)

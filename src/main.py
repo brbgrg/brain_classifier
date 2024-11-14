@@ -18,18 +18,27 @@ graphs_sc, labels_sc, graphs_sc_combined, labels_sc_combined, feature_names = pr
 sweep_config_sc = copy.deepcopy(sweep_config)
 sweep_config_sc_combined = copy.deepcopy(sweep_config)
 
+# Update the sweep config with the in_channels 
+sweep_config_sc['parameters']['in_channels'] = {
+    'value': 6
+}
+
+sweep_config_sc_combined['parameters']['in_channels'] = {
+    'value': 8
+}
+
 # Run sweeps on both datasets
-run_sweep(graphs_sc, labels_sc, sweep_config, dataset_name='graphs_sc')
-run_sweep(graphs_sc_combined, labels_sc_combined, sweep_config, dataset_name='graphs_sc_combined')
+#run_sweep(graphs_sc, labels_sc, sweep_config_sc, dataset_name='graphs_sc')
+run_sweep(graphs_sc_combined, labels_sc_combined, sweep_config_sc_combined, dataset_name='graphs_sc_combined')
 
 # Run the model on the test set
-model_path_sc = 'best_model_sc.pth'
+#model_path_sc = 'best_model_sc.pth'
 model_path_sc_combined = 'best_model_sc_combined.pth'
 
 # Refine sweep config ...
 
 # Test the model on the test set
-test_model(model_path_sc, graphs_sc, labels_sc)
+#test_model(model_path_sc, graphs_sc, labels_sc)
 
 # Test the model on the test set
-test_model(model_path_sc_combined, graphs_sc_combined, labels_sc_combined)
+#test_model(model_path_sc_combined, graphs_sc_combined, labels_sc_combined)

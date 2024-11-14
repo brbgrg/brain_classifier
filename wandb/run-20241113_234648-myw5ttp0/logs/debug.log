@@ -1,0 +1,34 @@
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Configure stats pid to 31996
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Loading settings from C:\Users\barbo\.config\wandb\settings
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Loading settings from C:\Users\barbo\brain classifier repo\brain_classifier\wandb\settings
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Loading settings from environment variables: {'project': 'graph-classification-graphs_sc_combined', 'entity': 'barbonigiorgia-sapienza-universit-di-roma', 'root_dir': 'C:\\Users\\barbo\\brain classifier repo\\brain_classifier', 'sweep_id': 'sqzkfogb', 'run_id': 'myw5ttp0', 'sweep_param_path': 'C:\\Users\\barbo\\brain classifier repo\\brain_classifier\\wandb\\sweep-sqzkfogb\\config-myw5ttp0.yaml'}
+2024-11-13 23:46:48,563 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'src\\main.py', 'program_abspath': 'c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\main.py', 'program': 'c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\main.py'}
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:_log_setup():534] Logging user logs to C:\Users\barbo\brain classifier repo\brain_classifier\wandb\run-20241113_234648-myw5ttp0\logs\debug.log
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:_log_setup():535] Logging internal logs to C:\Users\barbo\brain classifier repo\brain_classifier\wandb\run-20241113_234648-myw5ttp0\logs\debug-internal.log
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():621] calling init triggers
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():628] wandb.init called with sweep_config: {'batch_size': 4, 'in_channels': 8, 'learning_rate': 0.001930094050465619, 'num_epochs': 5, 'num_heads': 2, 'optimizer': 'adam', 'out_channels': 4, 'random_state': 42, 'test_size': 0.3, 'weight_decay': 1e-06}
+config: {'method': 'random', 'metric': {'name': 'val_f1', 'goal': 'maximize'}, 'parameters': {'optimizer': {'values': ['adam', 'sgd']}, 'test_size': {'value': 0.3}, 'learning_rate': {'distribution': 'log_uniform_values', 'min': 1e-05, 'max': 0.01}, 'out_channels': {'values': [4, 8, 12, 16]}, 'num_heads': {'values': [1, 2, 3, 4, 5]}, 'num_epochs': {'value': 5}, 'weight_decay': {'values': [0, 1e-06, 1e-05, 0.0001, 0.001]}, 'batch_size': {'values': [4]}, 'random_state': {'value': 42}, 'in_channels': {'value': 8}}}
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():671] starting backend
+2024-11-13 23:46:48,564 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():675] sending inform_init request
+2024-11-13 23:46:48,571 INFO    Thread-10 (_run_job):31996 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2024-11-13 23:46:48,573 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():688] backend started and connected
+2024-11-13 23:46:48,590 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_config_callback():1390] config_cb None None {'batch_size': 4, 'in_channels': 8, 'learning_rate': 0.001930094050465619, 'num_epochs': 5, 'num_heads': 2, 'optimizer': 'adam', 'out_channels': 4, 'random_state': 42, 'test_size': 0.3, 'weight_decay': 1e-06}
+2024-11-13 23:46:48,590 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():783] updated telemetry
+2024-11-13 23:46:48,642 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-11-13 23:46:50,042 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():867] starting run threads in backend
+2024-11-13 23:46:50,218 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_console_start():2463] atexit reg
+2024-11-13 23:46:50,218 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-13 23:46:50,218 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-13 23:46:50,218 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-13 23:46:50,220 INFO    Thread-10 (_run_job):31996 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-13 23:46:50,578 INFO    Thread-10 (_run_job):31996 [wandb_watch.py:_watch():71] Watching
+2024-11-13 23:46:53,897 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_finish():2158] finishing run barbonigiorgia-sapienza-universit-di-roma/graph-classification-graphs_sc_combined/myw5ttp0
+2024-11-13 23:46:53,897 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 1
+2024-11-13 23:46:53,900 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_restore():2408] restore
+2024-11-13 23:46:53,900 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_restore():2414] restore done
+2024-11-13 23:46:57,887 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2024-11-13 23:46:57,887 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2024-11-13 23:46:57,932 INFO    Thread-10 (_run_job):31996 [wandb_run.py:_footer_sync_info():3934] logging synced files

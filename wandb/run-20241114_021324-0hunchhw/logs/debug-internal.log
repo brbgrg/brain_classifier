@@ -1,0 +1,23 @@
+{"time":"2024-11-14T02:13:24.5652346+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-14T02:13:24.5652346+01:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\barbo\\brain classifier repo\\brain_classifier\\wandb\\run-20241114_021324-0hunchhw\\logs\\debug-core.log"}
+{"time":"2024-11-14T02:13:25.5064417+01:00","level":"INFO","msg":"created new stream","id":"0hunchhw"}
+{"time":"2024-11-14T02:13:25.5065694+01:00","level":"INFO","msg":"stream: started","id":"0hunchhw"}
+{"time":"2024-11-14T02:13:25.5066502+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"0hunchhw"}}
+{"time":"2024-11-14T02:13:25.5067007+01:00","level":"INFO","msg":"sender: started","stream_id":"0hunchhw"}
+{"time":"2024-11-14T02:13:25.5065694+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"0hunchhw"}}
+{"time":"2024-11-14T02:13:25.8634156+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-14T02:14:04.7011693+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:58300->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:04.7011693+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:58300->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:06.3658687+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/barbonigiorgia-sapienza-universit-di-roma/graph-classification-graphs_sc_combined/0hunchhw/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:19.2248233+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-14T02:14:19.2253365+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-14T02:14:20.2316778+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc_combined","runtime_seconds":6.1637172},{"desc":"updating run config","runtime_seconds":1.0041857}],"total_operations":2}}
+{"time":"2024-11-14T02:14:34.074542+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:58313->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:34.074542+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:58313->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:34.074542+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:58313->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-11-14T02:14:38.9059806+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-14T02:14:40.1532945+01:00","level":"INFO","msg":"stream: closing","id":"0hunchhw"}
+{"time":"2024-11-14T02:14:40.1532945+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"0hunchhw"}}
+{"time":"2024-11-14T02:14:40.1532945+01:00","level":"INFO","msg":"sender: closed","stream_id":"0hunchhw"}
+{"time":"2024-11-14T02:14:40.1532945+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"0hunchhw"}}
+{"time":"2024-11-14T02:14:40.1532945+01:00","level":"INFO","msg":"stream: closed","id":"0hunchhw"}

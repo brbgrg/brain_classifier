@@ -7,30 +7,31 @@ sweep_config = {
     },
     'parameters': {
         'optimizer': {
-            'values': ['adam', 'sgd']
+            'values': ['adam']#, 'sgd']
         },
         'test_size': {
             'value': 0.3
         },
         'learning_rate': {
-            'distribution': 'log_uniform_values',
-            'min': 1e-5,
-            'max': 1e-2
+            #'distribution': 'log_uniform_values',
+            #'min': 1e-5,
+            #'max': 1e-2
+            'value': 1e-3
         },
         'out_channels': {
-            'values': [4, 8, 12, 16]
+            'values': [8]  #[4, 8, 12, 16]
         },
         'num_heads': {
-            'values': [1, 2, 3, 4, 5]
+            'values': [3] #[1, 2, 3, 4, 5]
         },
         'num_epochs': {
             'value': 5
         },
         'weight_decay': {
-            'values': [0, 1e-6, 1e-5, 1e-4, 1e-3]
+            'values': [0]#, 1e-6, 1e-5, 1e-4, 1e-3]
         },
         'batch_size': {
-            'values': [8, 16, 32]
+            'values': [8]#, 16, 32]
         },
         'random_state': {
             'value': 42
