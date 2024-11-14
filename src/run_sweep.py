@@ -7,12 +7,12 @@ from model import GAT  # Import the model from model.py
 from train_and_test import train, validate
 from data_utils import build_optimizer, build_dataloaders
 
-def run_sweep(graphs, labels, sweep_config, dataset_name):
+def run_sweep(graphs, labels, sweep_config, dataset_name, sweep_count):
     # Initialize the sweep
-    sweep_id = wandb.sweep(sweep_config, project='graph-classification-' + dataset_name)
+    sweep_id = wandb.sweep(sweep_config, project=f'graph-classification-{dataset_name}')
     # Function to execute a single run
     def train_sweep():
-        wandb.init(config=sweep_config)
+        wandb.init()
         config = wandb.config
 
         # Build data loaders
@@ -57,13 +57,11 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
                 artifact = wandb.Artifact(f'best_model_{dataset_name}', type='model')
                 artifact.add_file(f'best_model_{dataset_name}.pth')
                 wandb.log_artifact(artifact)
-
-
         del model
         del optimizer
+        del criterion
         torch.cuda.empty_cache()
         # Finish the wandb run
         wandb.finish()
-        
-
-    wandb.agent(sweep_id, function=train_sweep, count=5)
+    wandb.agent(sweep_id, function=train_sweep, count=sweep_count)
+    return sweep_id 
