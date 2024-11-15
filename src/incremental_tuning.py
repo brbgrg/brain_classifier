@@ -20,7 +20,7 @@ def incremental_tuning(graphs, labels, initial_sweep_config, dataset_name, num_i
         all_runs_df = fetch_runs_dataframe(project_name, sweep_id= sweep_id)
         
         # Refine sweep configuration
-        sweep_config = refine_sweep_config(sweep_config, all_runs_df)
+        #sweep_config = refine_sweep_config(sweep_config, all_runs_df)
 
         print(f"Refined hyperparameters after iteration {i+1}: {sweep_config['parameters']}")
         print(f"Completed iteration {i+1}/{num_iterations}")

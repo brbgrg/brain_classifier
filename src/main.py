@@ -8,7 +8,7 @@ import os
 import copy
 
 # Base directory where your data is stored
-base_dir = os.getcwd()
+base_dir = os.dir(os.getcwd())
 
 # Prepare datasets
 graphs_sc, labels_sc, graphs_sc_combined, labels_sc_combined, feature_names = prepare_datasets(base_dir)

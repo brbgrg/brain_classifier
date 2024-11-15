@@ -1,0 +1,17 @@
+{"time":"2024-11-15T01:52:07.2125589+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T01:52:07.2125589+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_015207-awbm4fzh\\logs\\debug-core.log"}
+{"time":"2024-11-15T01:52:07.3316844+01:00","level":"INFO","msg":"created new stream","id":"awbm4fzh"}
+{"time":"2024-11-15T01:52:07.3316844+01:00","level":"INFO","msg":"stream: started","id":"awbm4fzh"}
+{"time":"2024-11-15T01:52:07.3321942+01:00","level":"INFO","msg":"sender: started","stream_id":"awbm4fzh"}
+{"time":"2024-11-15T01:52:07.3316844+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"awbm4fzh"}}
+{"time":"2024-11-15T01:52:07.3321942+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"awbm4fzh"}}
+{"time":"2024-11-15T01:52:07.8572672+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T01:52:24.2327943+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T01:52:24.2333546+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T01:52:25.2450383+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7680705},{"desc":"uploading config.yaml","runtime_seconds":0.5571304,"progress":"942B/942B"}],"total_operations":2}}
+{"time":"2024-11-15T01:52:27.0844766+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T01:52:28.5805171+01:00","level":"INFO","msg":"stream: closing","id":"awbm4fzh"}
+{"time":"2024-11-15T01:52:28.5805171+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"awbm4fzh"}}
+{"time":"2024-11-15T01:52:28.5805171+01:00","level":"INFO","msg":"sender: closed","stream_id":"awbm4fzh"}
+{"time":"2024-11-15T01:52:28.5805171+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"awbm4fzh"}}
+{"time":"2024-11-15T01:52:28.581032+01:00","level":"INFO","msg":"stream: closed","id":"awbm4fzh"}

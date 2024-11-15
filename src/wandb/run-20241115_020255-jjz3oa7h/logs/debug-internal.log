@@ -1,0 +1,8 @@
+{"time":"2024-11-15T02:02:55.1934862+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T02:02:55.1934862+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_020255-jjz3oa7h\\logs\\debug-core.log"}
+{"time":"2024-11-15T02:02:55.3129531+01:00","level":"INFO","msg":"created new stream","id":"jjz3oa7h"}
+{"time":"2024-11-15T02:02:55.3129531+01:00","level":"INFO","msg":"stream: started","id":"jjz3oa7h"}
+{"time":"2024-11-15T02:02:55.3129531+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jjz3oa7h"}}
+{"time":"2024-11-15T02:02:55.3129531+01:00","level":"INFO","msg":"sender: started","stream_id":"jjz3oa7h"}
+{"time":"2024-11-15T02:02:55.3129531+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jjz3oa7h"}}
+{"time":"2024-11-15T02:02:55.9134995+01:00","level":"INFO","msg":"Starting system monitor"}

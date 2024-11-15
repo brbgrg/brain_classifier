@@ -1,0 +1,17 @@
+{"time":"2024-11-15T01:48:21.3990391+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T01:48:21.3990978+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_014821-q9lrpam9\\logs\\debug-core.log"}
+{"time":"2024-11-15T01:48:22.2235297+01:00","level":"INFO","msg":"created new stream","id":"q9lrpam9"}
+{"time":"2024-11-15T01:48:22.2235297+01:00","level":"INFO","msg":"stream: started","id":"q9lrpam9"}
+{"time":"2024-11-15T01:48:22.2235297+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"q9lrpam9"}}
+{"time":"2024-11-15T01:48:22.2235297+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"q9lrpam9"}}
+{"time":"2024-11-15T01:48:22.2235297+01:00","level":"INFO","msg":"sender: started","stream_id":"q9lrpam9"}
+{"time":"2024-11-15T01:48:22.5475492+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T01:48:32.7216474+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T01:48:32.7226013+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T01:48:33.7332305+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8309467},{"desc":"uploading config.yaml","runtime_seconds":0.6261655,"progress":"936B/936B"},{"desc":"uploading output.log","runtime_seconds":0.6261655,"progress":"525B/525B"}],"total_operations":3}}
+{"time":"2024-11-15T01:48:35.3057432+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T01:48:36.9175567+01:00","level":"INFO","msg":"stream: closing","id":"q9lrpam9"}
+{"time":"2024-11-15T01:48:36.9175567+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"q9lrpam9"}}
+{"time":"2024-11-15T01:48:36.9175567+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"q9lrpam9"}}
+{"time":"2024-11-15T01:48:36.9175567+01:00","level":"INFO","msg":"sender: closed","stream_id":"q9lrpam9"}
+{"time":"2024-11-15T01:48:36.917994+01:00","level":"INFO","msg":"stream: closed","id":"q9lrpam9"}

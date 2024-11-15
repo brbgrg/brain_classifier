@@ -1,0 +1,17 @@
+{"time":"2024-11-15T01:56:05.0790056+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T01:56:05.0790056+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_015605-fwi6p43i\\logs\\debug-core.log"}
+{"time":"2024-11-15T01:56:05.1981326+01:00","level":"INFO","msg":"created new stream","id":"fwi6p43i"}
+{"time":"2024-11-15T01:56:05.1987773+01:00","level":"INFO","msg":"stream: started","id":"fwi6p43i"}
+{"time":"2024-11-15T01:56:05.1993895+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fwi6p43i"}}
+{"time":"2024-11-15T01:56:05.1993895+01:00","level":"INFO","msg":"sender: started","stream_id":"fwi6p43i"}
+{"time":"2024-11-15T01:56:05.1987773+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fwi6p43i"}}
+{"time":"2024-11-15T01:56:05.7037479+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T01:56:20.4734877+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T01:56:20.4745267+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T01:56:21.4901526+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8231238},{"desc":"uploading history, summary, console logs","runtime_seconds":0.2710736}],"total_operations":2}}
+{"time":"2024-11-15T01:56:23.3275473+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T01:56:24.8786426+01:00","level":"INFO","msg":"stream: closing","id":"fwi6p43i"}
+{"time":"2024-11-15T01:56:24.8786426+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"fwi6p43i"}}
+{"time":"2024-11-15T01:56:24.8787542+01:00","level":"INFO","msg":"sender: closed","stream_id":"fwi6p43i"}
+{"time":"2024-11-15T01:56:24.8786426+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fwi6p43i"}}
+{"time":"2024-11-15T01:56:24.8787542+01:00","level":"INFO","msg":"stream: closed","id":"fwi6p43i"}

@@ -1,37 +1,37 @@
 # sweep_config.py
 sweep_config = {
-    'method': 'random',  # Choose 'grid', 'random', or 'bayes'
+    'method': 'grid',  # Choose 'grid', 'random', or 'bayes'
     'metric': {
         'name': 'val_f1',
         'goal': 'maximize'
     },
     'parameters': {
         'optimizer': {
-            'values': ['adam', 'sgd'] #usa solo adam
+            'values': ['adam'], #'sgd'] #usa solo adam
         },
         'test_size': {
             'value': 0.3
         },
         'learning_rate': {
-            #'values': [1e-3, 1e-4, 1e-5]
-            'distribution': 'log_uniform_values',
-            'min': 1e-5,
-            'max': 1e-2
+            'values': [1e-3, 1e-4, 1e-5]
+            #'distribution': 'log_uniform_values',
+            #'min': 1e-5,
+            #'max': 1e-2
         },
         'out_channels': {
-            'values': [4, 8, 12, 16]
+            'values': [8,16] #[4, 8, 12, 16]
         },
         'num_heads': {
-            'values': [1, 2, 3, 4, 5]
+            'values': [2,4] #[1, 2, 3, 4, 5]
         },
         'num_epochs': {
-            'value': 1
+            'value': 5
         },
         'weight_decay': {
-            'values': [0, 1e-5, 1e-4, 1e-3, 1e-2]
+            'values': [0, 1e-4, 1e-2] #[0, 1e-5, 1e-4, 1e-3, 1e-2]
         },
         'batch_size': {
-            'values': [8, 16, 32] #usa solo 32
+            'values': [32] #[8, 16, 32] #usa solo 32
         },
         'random_state': {
             'value': 42
@@ -40,7 +40,7 @@ sweep_config = {
 }
 
 # Calculate the size of the search space
-"""
+
 search_space_size = (
     len(sweep_config['parameters']['optimizer']['values']) *
     len(sweep_config['parameters']['learning_rate']['values']) *
@@ -51,4 +51,4 @@ search_space_size = (
 )
 
 print(f"Search space size: {search_space_size}")
-"""
+
