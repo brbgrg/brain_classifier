@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:37:32.877939+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:37:32.877939+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173732-hsfxywoy\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:37:32.9913577+01:00","level":"INFO","msg":"created new stream","id":"hsfxywoy"}
+{"time":"2024-11-15T17:37:32.9913577+01:00","level":"INFO","msg":"stream: started","id":"hsfxywoy"}
+{"time":"2024-11-15T17:37:32.9913577+01:00","level":"INFO","msg":"sender: started","stream_id":"hsfxywoy"}
+{"time":"2024-11-15T17:37:32.9913577+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hsfxywoy"}}
+{"time":"2024-11-15T17:37:32.9913577+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hsfxywoy"}}
+{"time":"2024-11-15T17:37:33.5529538+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:37:54.4080808+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:37:54.4087006+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:37:55.408752+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0079893,"subtasks":[{"desc":"best_model_graphs_sc.pth","runtime_seconds":0.1404941,"progress":"6.2KB/6.2KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T17:37:59.0920001+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:38:00.4183291+01:00","level":"INFO","msg":"stream: closing","id":"hsfxywoy"}
+{"time":"2024-11-15T17:38:00.4183291+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hsfxywoy"}}
+{"time":"2024-11-15T17:38:00.4183291+01:00","level":"INFO","msg":"sender: closed","stream_id":"hsfxywoy"}
+{"time":"2024-11-15T17:38:00.4183291+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hsfxywoy"}}
+{"time":"2024-11-15T17:38:00.4183291+01:00","level":"INFO","msg":"stream: closed","id":"hsfxywoy"}

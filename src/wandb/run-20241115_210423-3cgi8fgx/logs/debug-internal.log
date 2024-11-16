@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:04:23.6915005+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:04:23.6920213+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_210423-3cgi8fgx\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:04:24.3412943+01:00","level":"INFO","msg":"created new stream","id":"3cgi8fgx"}
+{"time":"2024-11-15T21:04:24.3415485+01:00","level":"INFO","msg":"stream: started","id":"3cgi8fgx"}
+{"time":"2024-11-15T21:04:24.3415991+01:00","level":"INFO","msg":"sender: started","stream_id":"3cgi8fgx"}
+{"time":"2024-11-15T21:04:24.3415485+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3cgi8fgx"}}
+{"time":"2024-11-15T21:04:24.3415991+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3cgi8fgx"}}
+{"time":"2024-11-15T21:04:24.7115975+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:05:04.8165738+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:05:04.8174142+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:05:05.8311065+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8084519},{"desc":"uploading config.yaml","runtime_seconds":0.6025329,"progress":"937B/937B"}],"total_operations":2}}
+{"time":"2024-11-15T21:05:07.5126154+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:05:08.9375563+01:00","level":"INFO","msg":"stream: closing","id":"3cgi8fgx"}
+{"time":"2024-11-15T21:05:08.9375563+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"3cgi8fgx"}}
+{"time":"2024-11-15T21:05:08.9375563+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"3cgi8fgx"}}
+{"time":"2024-11-15T21:05:08.9375563+01:00","level":"INFO","msg":"sender: closed","stream_id":"3cgi8fgx"}
+{"time":"2024-11-15T21:05:08.9380692+01:00","level":"INFO","msg":"stream: closed","id":"3cgi8fgx"}

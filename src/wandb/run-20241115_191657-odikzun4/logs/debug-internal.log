@@ -1,0 +1,17 @@
+{"time":"2024-11-15T19:16:57.2354418+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T19:16:57.2354418+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_191657-odikzun4\\logs\\debug-core.log"}
+{"time":"2024-11-15T19:16:57.3542911+01:00","level":"INFO","msg":"created new stream","id":"odikzun4"}
+{"time":"2024-11-15T19:16:57.3548196+01:00","level":"INFO","msg":"stream: started","id":"odikzun4"}
+{"time":"2024-11-15T19:16:57.3548196+01:00","level":"INFO","msg":"sender: started","stream_id":"odikzun4"}
+{"time":"2024-11-15T19:16:57.3548196+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"odikzun4"}}
+{"time":"2024-11-15T19:16:57.3548196+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"odikzun4"}}
+{"time":"2024-11-15T19:16:57.8575647+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T19:17:20.6162216+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T19:17:20.6172721+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T19:17:21.4092735+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T19:17:21.6262797+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.2166981}],"total_operations":1}}
+{"time":"2024-11-15T19:17:22.8212049+01:00","level":"INFO","msg":"stream: closing","id":"odikzun4"}
+{"time":"2024-11-15T19:17:22.8212049+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"odikzun4"}}
+{"time":"2024-11-15T19:17:22.8212049+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"odikzun4"}}
+{"time":"2024-11-15T19:17:22.8212049+01:00","level":"INFO","msg":"sender: closed","stream_id":"odikzun4"}
+{"time":"2024-11-15T19:17:22.8212049+01:00","level":"INFO","msg":"stream: closed","id":"odikzun4"}

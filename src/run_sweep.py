@@ -5,15 +5,20 @@ import torch.nn as nn
 import wandb
 from model import GAT  # Import the model from model.py
 from train_and_test import train, validate
-from data_utils import build_optimizer, build_dataloaders
+from data_utils import build_optimizer, build_dataloaders, set_seed
 
-def run_sweep(graphs, labels, sweep_config, dataset_name):
+def run_sweep(graphs, labels, sweep_config, dataset_name, sweep_count=None):
     # Initialize the sweep
     sweep_id = wandb.sweep(sweep_config, project=f'graph-classification-{dataset_name}')
     # Function to execute a single run
     def train_sweep():
         wandb.init()
         config = wandb.config
+
+        print(f"Running with config: {config}")
+
+        # Set random seed
+        set_seed(config.random_state)
 
         # Build data loaders
         train_loader, val_loader, _ = build_dataloaders(graphs, labels, config)
@@ -28,6 +33,7 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
         ).to(device)
         criterion = nn.CrossEntropyLoss()
         optimizer = build_optimizer(model, config.optimizer, config.learning_rate, config.weight_decay)
+        
         # Watch the model with wandb
         wandb.watch(model, log="all", log_freq=10)
 
@@ -63,5 +69,9 @@ def run_sweep(graphs, labels, sweep_config, dataset_name):
         torch.cuda.empty_cache()
         # Finish the wandb run
         wandb.finish()
-    wandb.agent(sweep_id, function=train_sweep)
-    return sweep_id 
+    # Run the sweep agent
+    if sweep_config.get('method') == 'random' and sweep_count is not None:
+        wandb.agent(sweep_id, function=train_sweep, count=sweep_count)
+    else:
+        wandb.agent(sweep_id, function=train_sweep)
+    return sweep_id

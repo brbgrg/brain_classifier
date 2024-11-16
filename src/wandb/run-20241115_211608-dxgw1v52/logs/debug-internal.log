@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:16:08.9233725+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:16:08.9234914+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_211608-dxgw1v52\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:16:09.4932956+01:00","level":"INFO","msg":"created new stream","id":"dxgw1v52"}
+{"time":"2024-11-15T21:16:09.4932956+01:00","level":"INFO","msg":"stream: started","id":"dxgw1v52"}
+{"time":"2024-11-15T21:16:09.4932956+01:00","level":"INFO","msg":"sender: started","stream_id":"dxgw1v52"}
+{"time":"2024-11-15T21:16:09.4932956+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dxgw1v52"}}
+{"time":"2024-11-15T21:16:09.4932956+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dxgw1v52"}}
+{"time":"2024-11-15T21:16:10.049654+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:16:18.2790928+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:16:18.2802019+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:16:19.0864386+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:16:19.2921948+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.2057562}],"total_operations":1}}
+{"time":"2024-11-15T21:16:20.4595615+01:00","level":"INFO","msg":"stream: closing","id":"dxgw1v52"}
+{"time":"2024-11-15T21:16:20.4595615+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"dxgw1v52"}}
+{"time":"2024-11-15T21:16:20.4595615+01:00","level":"INFO","msg":"sender: closed","stream_id":"dxgw1v52"}
+{"time":"2024-11-15T21:16:20.4595615+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"dxgw1v52"}}
+{"time":"2024-11-15T21:16:20.4600948+01:00","level":"INFO","msg":"stream: closed","id":"dxgw1v52"}

@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:15:37.5392476+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:15:37.5397806+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_211537-zc2pvq1p\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:15:37.6570793+01:00","level":"INFO","msg":"created new stream","id":"zc2pvq1p"}
+{"time":"2024-11-15T21:15:37.6570793+01:00","level":"INFO","msg":"stream: started","id":"zc2pvq1p"}
+{"time":"2024-11-15T21:15:37.6570793+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zc2pvq1p"}}
+{"time":"2024-11-15T21:15:37.6570793+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"zc2pvq1p"}}
+{"time":"2024-11-15T21:15:37.6570793+01:00","level":"INFO","msg":"sender: started","stream_id":"zc2pvq1p"}
+{"time":"2024-11-15T21:15:38.2143003+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:15:56.8295901+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:15:56.8307651+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:15:57.8391469+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0195906},{"desc":"updating run config","runtime_seconds":0.9984967}],"total_operations":2}}
+{"time":"2024-11-15T21:16:02.1916788+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:16:03.5270566+01:00","level":"INFO","msg":"stream: closing","id":"zc2pvq1p"}
+{"time":"2024-11-15T21:16:03.5270566+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"zc2pvq1p"}}
+{"time":"2024-11-15T21:16:03.5270566+01:00","level":"INFO","msg":"sender: closed","stream_id":"zc2pvq1p"}
+{"time":"2024-11-15T21:16:03.5270566+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"zc2pvq1p"}}
+{"time":"2024-11-15T21:16:03.5275722+01:00","level":"INFO","msg":"stream: closed","id":"zc2pvq1p"}

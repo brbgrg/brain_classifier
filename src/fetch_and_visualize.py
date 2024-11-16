@@ -2,6 +2,8 @@ import wandb
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from IPython.display import display
+
 
 def fetch_runs_dataframe(project_name, entity_name=None, sweep_id=None):
     api = wandb.Api()
@@ -41,7 +43,7 @@ def get_top_runs(df, metric, top_x=10):
 def plot_hyperparameter_performance(df, hyperparameter, metric):
     plt.figure(figsize=(10, 6))
     sns.scatterplot(data=df, x=hyperparameter, y=metric)
-    plt.xscale('log' if 'learning_rate' in hyperparameter else 'linear')
+    plt.xscale('linear')
     plt.title(f'{hyperparameter} vs. {metric}')
     plt.show()
 
@@ -51,15 +53,65 @@ def compute_correlation(df, hyperparameters, metric):
 
 def tag_top_runs(top_runs_df, project_name, entity_name=None):
     api = wandb.Api()
-    for _, row in top_runs_df.iterrows():
-        run_id = row['run_id']
-        if entity_name:
-            run_path = f"{entity_name}/{project_name}/{run_id}"
+    top_run_ids = set(top_runs_df['run_id'])
+    runs = api.runs(f"{entity_name}/{project_name}" if entity_name else project_name)
+    
+    for run in runs:
+        tags = set(run.tags)
+        if run.id in top_run_ids:
+            tags.add('top_performing')
         else:
-            run_path = f"{project_name}/{run_id}"
+            tags.discard('top_performing')
+        run.tags = list(tags)
+        run.save()
+
+
+def plot_train_val_curves(run_id, metrics, entity_name=None, project_name=None):
+    """
+    Plots training and validation curves for specified metrics over all epochs.
+
+    Args:
+        run_id (str): The ID of the wandb run.
+        metrics (list): The list of metrics to plot (e.g., ['accuracy', 'loss']).
+        entity_name (str, optional): The wandb entity/team name. Defaults to None.
+        project_name (str, optional): The wandb project name. Defaults to None.
+
+    Returns:
+        None: Displays the plot.
+    """
+    api = wandb.Api()
+
+    if entity_name and project_name:
+        run_path = f"{entity_name}/{project_name}/{run_id}"
+    else:
+        run_path = f"{project_name}/{run_id}"
+
+    try:
         run = api.run(run_path)
-        tags = run.tags
-        if 'top_performing' not in tags:
-            tags.append('top_performing')
-            run.tags = tags
-            run.update()
+    except wandb.errors.CommError:
+        print(f"Run {run_path} not found.")
+        return
+
+    history = run.history(keys=[f'train_{metric}' for metric in metrics] + [f'val_{metric}' for metric in metrics] + ['epoch'])
+
+    if history.empty:
+        print(f"No data found for metrics '{metrics}' in run {run_path}.")
+        return
+
+    num_metrics = len(metrics)
+    fig, axes = plt.subplots(num_metrics, 1, figsize=(8, 4 * num_metrics), sharey=True)
+    if num_metrics == 1:
+        axes = [axes]
+
+    for ax, metric in zip(axes, metrics):
+        sns.lineplot(data=history, x='epoch', y=f'train_{metric}', label='Train', marker='o', ax=ax)
+        sns.lineplot(data=history, x='epoch', y=f'val_{metric}', label='Validation', marker='o', ax=ax)
+        ax.set_xlabel('Epoch')
+        ax.set_ylabel(metric.capitalize())
+        ax.set_title(f'Train vs Validation {metric.capitalize()}')
+        ax.legend()
+        ax.grid(True)
+
+    plt.tight_layout()
+    plt.show()
+

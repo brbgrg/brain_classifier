@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:20:34.8196739+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:20:34.8196739+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_172034-die2gnpg\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:20:35.6427365+01:00","level":"INFO","msg":"created new stream","id":"die2gnpg"}
+{"time":"2024-11-15T17:20:35.6427365+01:00","level":"INFO","msg":"stream: started","id":"die2gnpg"}
+{"time":"2024-11-15T17:20:35.6427365+01:00","level":"INFO","msg":"sender: started","stream_id":"die2gnpg"}
+{"time":"2024-11-15T17:20:35.6427365+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"die2gnpg"}}
+{"time":"2024-11-15T17:20:35.6427365+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"die2gnpg"}}
+{"time":"2024-11-15T17:20:36.0388574+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:21:14.653383+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:21:14.6544279+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:21:15.6656349+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0214862,"subtasks":[{"desc":"best_model_graphs_sc.pth","runtime_seconds":0.2097153,"progress":"6.2KB/6.2KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T17:21:17.554315+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:21:19.0457293+01:00","level":"INFO","msg":"stream: closing","id":"die2gnpg"}
+{"time":"2024-11-15T17:21:19.0457293+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"die2gnpg"}}
+{"time":"2024-11-15T17:21:19.0457293+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"die2gnpg"}}
+{"time":"2024-11-15T17:21:19.0457293+01:00","level":"INFO","msg":"sender: closed","stream_id":"die2gnpg"}
+{"time":"2024-11-15T17:21:19.0457293+01:00","level":"INFO","msg":"stream: closed","id":"die2gnpg"}

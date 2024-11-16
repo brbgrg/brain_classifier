@@ -1,37 +1,37 @@
 # sweep_config.py
 sweep_config = {
-    'method': 'grid',  # Choose 'grid', 'random', or 'bayes'
+    'method': 'random',  # Choose 'grid', 'random', or 'bayes'
     'metric': {
         'name': 'val_f1',
         'goal': 'maximize'
     },
     'parameters': {
         'optimizer': {
-            'values': ['adam'], #'sgd'] #usa solo adam
+            'values': ['adam','sgd'] #usa solo adam
         },
         'test_size': {
             'value': 0.3
         },
         'learning_rate': {
-            'values': [1e-3, 1e-4, 1e-5]
+            'values': [1e-1, 1e-2, 1e-3, 1e-4]
             #'distribution': 'log_uniform_values',
             #'min': 1e-5,
             #'max': 1e-2
         },
         'out_channels': {
-            'values': [8,16] #[4, 8, 12, 16]
+            'values': [4, 8, 12, 16]
         },
         'num_heads': {
-            'values': [2,4] #[1, 2, 3, 4, 5]
+            'values': [1, 2, 3, 4]
         },
         'num_epochs': {
             'value': 5
         },
         'weight_decay': {
-            'values': [0, 1e-4, 1e-2] #[0, 1e-5, 1e-4, 1e-3, 1e-2]
+            'values': [0, 1e-5, 1e-4]
         },
         'batch_size': {
-            'values': [32] #[8, 16, 32] #usa solo 32
+            'values': [8, 16, 32] #usa solo 32
         },
         'random_state': {
             'value': 42

@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:03:26.5509713+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:03:26.551482+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_210326-6uvrkrq4\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:03:26.6689812+01:00","level":"INFO","msg":"created new stream","id":"6uvrkrq4"}
+{"time":"2024-11-15T21:03:26.6689812+01:00","level":"INFO","msg":"stream: started","id":"6uvrkrq4"}
+{"time":"2024-11-15T21:03:26.6695158+01:00","level":"INFO","msg":"sender: started","stream_id":"6uvrkrq4"}
+{"time":"2024-11-15T21:03:26.6695158+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6uvrkrq4"}}
+{"time":"2024-11-15T21:03:26.6689812+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6uvrkrq4"}}
+{"time":"2024-11-15T21:03:27.2763217+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:03:32.0653508+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:03:32.0660784+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:03:33.0720006+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.706238}],"total_operations":1}}
+{"time":"2024-11-15T21:03:34.6658578+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:03:35.9563705+01:00","level":"INFO","msg":"stream: closing","id":"6uvrkrq4"}
+{"time":"2024-11-15T21:03:35.9563705+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6uvrkrq4"}}
+{"time":"2024-11-15T21:03:35.9563705+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6uvrkrq4"}}
+{"time":"2024-11-15T21:03:35.9563705+01:00","level":"INFO","msg":"sender: closed","stream_id":"6uvrkrq4"}
+{"time":"2024-11-15T21:03:35.9568805+01:00","level":"INFO","msg":"stream: closed","id":"6uvrkrq4"}

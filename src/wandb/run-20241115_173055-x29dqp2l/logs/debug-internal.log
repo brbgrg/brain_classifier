@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:30:55.9377456+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:30:55.9377456+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173055-x29dqp2l\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:30:56.0538475+01:00","level":"INFO","msg":"created new stream","id":"x29dqp2l"}
+{"time":"2024-11-15T17:30:56.0538475+01:00","level":"INFO","msg":"stream: started","id":"x29dqp2l"}
+{"time":"2024-11-15T17:30:56.0538475+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"x29dqp2l"}}
+{"time":"2024-11-15T17:30:56.0538475+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"x29dqp2l"}}
+{"time":"2024-11-15T17:30:56.0543734+01:00","level":"INFO","msg":"sender: started","stream_id":"x29dqp2l"}
+{"time":"2024-11-15T17:30:56.5623335+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:31:08.0996832+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:31:08.1007361+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:31:09.1235271+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8455827,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.0763292,"progress":"3.4KB/3.4KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T17:31:10.6236803+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:31:11.9523294+01:00","level":"INFO","msg":"stream: closing","id":"x29dqp2l"}
+{"time":"2024-11-15T17:31:11.9523294+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"x29dqp2l"}}
+{"time":"2024-11-15T17:31:11.9523294+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"x29dqp2l"}}
+{"time":"2024-11-15T17:31:11.9523294+01:00","level":"INFO","msg":"sender: closed","stream_id":"x29dqp2l"}
+{"time":"2024-11-15T17:31:11.9523294+01:00","level":"INFO","msg":"stream: closed","id":"x29dqp2l"}

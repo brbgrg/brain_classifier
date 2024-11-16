@@ -24,10 +24,11 @@ class GATLayer(nn.Module):
         z2 = torch.cat([edges.src["z"], edges.dst["z"]], dim=1)
         a = self.attn_fc(z2)
         e = F.leaky_relu(a)
-        
         # Multiply by edge weight
-        #e = e * edges.data["weight"]
-        #print(edges.data["weight"])
+        try:
+            e.mul_(edges.data["weight"].unsqueeze(-1))
+        except Exception:
+            raise Exception("problem with edge weight multiplication")
         return {"e": e}
 
     def message_func(self, edges):
@@ -69,7 +70,6 @@ class MultiHeadGATLayer(nn.Module):
             # Average the output of each head
             return torch.mean(torch.stack(head_outs), dim=0)
 
-
 class GAT(nn.Module):
     def __init__(self, in_channels, out_channels, num_heads=2, num_classes=2):
         super(GAT, self).__init__()
@@ -84,14 +84,8 @@ class GAT(nn.Module):
         # Edge weights should already be stored in g.edata['w']
         # Apply the GAT layer
         x = self.gat1(g, x)
-        #x = F.elu(x)
         # Perform global mean pooling
         x = self.pool(g, x)
-        print(x.shape)
-        # (batch_size, num_heads, out_channels)
-        # Reshape to (batch_size, num_heads * out_channels)
-        #x = x.view(-1, x.size(1))
-        #print(x.shape)
         # Apply the final classifier
         x = self.classifier(x)
         return x

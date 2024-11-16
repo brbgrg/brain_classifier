@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:22:24.8306244+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:22:24.8306244+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_172224-x6rlgssg\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:22:24.9488238+01:00","level":"INFO","msg":"created new stream","id":"x6rlgssg"}
+{"time":"2024-11-15T17:22:24.9488238+01:00","level":"INFO","msg":"stream: started","id":"x6rlgssg"}
+{"time":"2024-11-15T17:22:24.9488238+01:00","level":"INFO","msg":"sender: started","stream_id":"x6rlgssg"}
+{"time":"2024-11-15T17:22:24.9488238+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"x6rlgssg"}}
+{"time":"2024-11-15T17:22:24.9488238+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"x6rlgssg"}}
+{"time":"2024-11-15T17:22:25.4961946+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:22:40.6442808+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:22:40.6447896+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:22:41.6563232+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0404441},{"desc":"uploading history, summary, console logs","runtime_seconds":0.6264183},{"desc":"uploading config.yaml","runtime_seconds":0.6130384,"progress":"940B/940B"}],"total_operations":3}}
+{"time":"2024-11-15T17:22:46.6230632+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:22:48.0054078+01:00","level":"INFO","msg":"stream: closing","id":"x6rlgssg"}
+{"time":"2024-11-15T17:22:48.0054078+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"x6rlgssg"}}
+{"time":"2024-11-15T17:22:48.0054078+01:00","level":"INFO","msg":"sender: closed","stream_id":"x6rlgssg"}
+{"time":"2024-11-15T17:22:48.0054078+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"x6rlgssg"}}
+{"time":"2024-11-15T17:22:48.0059192+01:00","level":"INFO","msg":"stream: closed","id":"x6rlgssg"}

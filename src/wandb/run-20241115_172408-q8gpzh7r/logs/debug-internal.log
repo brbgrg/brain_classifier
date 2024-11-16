@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:24:08.836355+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:24:08.8368599+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_172408-q8gpzh7r\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:24:08.9510305+01:00","level":"INFO","msg":"created new stream","id":"q8gpzh7r"}
+{"time":"2024-11-15T17:24:08.9510305+01:00","level":"INFO","msg":"stream: started","id":"q8gpzh7r"}
+{"time":"2024-11-15T17:24:08.9510305+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"q8gpzh7r"}}
+{"time":"2024-11-15T17:24:08.9510305+01:00","level":"INFO","msg":"sender: started","stream_id":"q8gpzh7r"}
+{"time":"2024-11-15T17:24:08.9510305+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"q8gpzh7r"}}
+{"time":"2024-11-15T17:24:09.6309436+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:24:15.6574599+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:24:15.6585194+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:24:16.6736979+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":4.1074596},{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":2.0487342}],"total_operations":2}}
+{"time":"2024-11-15T17:24:19.1579892+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:24:20.4695362+01:00","level":"INFO","msg":"stream: closing","id":"q8gpzh7r"}
+{"time":"2024-11-15T17:24:20.4695362+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"q8gpzh7r"}}
+{"time":"2024-11-15T17:24:20.4695362+01:00","level":"INFO","msg":"sender: closed","stream_id":"q8gpzh7r"}
+{"time":"2024-11-15T17:24:20.4695362+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"q8gpzh7r"}}
+{"time":"2024-11-15T17:24:20.4695362+01:00","level":"INFO","msg":"stream: closed","id":"q8gpzh7r"}

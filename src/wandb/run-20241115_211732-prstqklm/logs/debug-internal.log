@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:17:32.9380131+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:17:32.9380131+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_211732-prstqklm\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:17:33.0558362+01:00","level":"INFO","msg":"created new stream","id":"prstqklm"}
+{"time":"2024-11-15T21:17:33.0563766+01:00","level":"INFO","msg":"stream: started","id":"prstqklm"}
+{"time":"2024-11-15T21:17:33.0564368+01:00","level":"INFO","msg":"sender: started","stream_id":"prstqklm"}
+{"time":"2024-11-15T21:17:33.0564368+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"prstqklm"}}
+{"time":"2024-11-15T21:17:33.0564368+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"prstqklm"}}
+{"time":"2024-11-15T21:17:33.6187412+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:17:56.8435147+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:17:56.8444143+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:17:57.8562968+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0233281}],"total_operations":1}}
+{"time":"2024-11-15T21:18:01.5916282+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:18:02.9811395+01:00","level":"INFO","msg":"stream: closing","id":"prstqklm"}
+{"time":"2024-11-15T21:18:02.9811395+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"prstqklm"}}
+{"time":"2024-11-15T21:18:02.9811395+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"prstqklm"}}
+{"time":"2024-11-15T21:18:02.9811395+01:00","level":"INFO","msg":"sender: closed","stream_id":"prstqklm"}
+{"time":"2024-11-15T21:18:02.9816499+01:00","level":"INFO","msg":"stream: closed","id":"prstqklm"}

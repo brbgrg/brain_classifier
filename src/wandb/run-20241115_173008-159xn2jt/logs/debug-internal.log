@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:30:09.0171034+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:30:09.0171034+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173008-159xn2jt\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:30:09.1294435+01:00","level":"INFO","msg":"created new stream","id":"159xn2jt"}
+{"time":"2024-11-15T17:30:09.1294435+01:00","level":"INFO","msg":"stream: started","id":"159xn2jt"}
+{"time":"2024-11-15T17:30:09.1294435+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"159xn2jt"}}
+{"time":"2024-11-15T17:30:09.1294435+01:00","level":"INFO","msg":"sender: started","stream_id":"159xn2jt"}
+{"time":"2024-11-15T17:30:09.1294435+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"159xn2jt"}}
+{"time":"2024-11-15T17:30:09.6229144+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:30:19.776646+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:30:19.7771818+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:30:20.5724532+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:30:20.7783319+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.2049396}],"total_operations":1}}
+{"time":"2024-11-15T17:30:21.9091007+01:00","level":"INFO","msg":"stream: closing","id":"159xn2jt"}
+{"time":"2024-11-15T17:30:21.9091007+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"159xn2jt"}}
+{"time":"2024-11-15T17:30:21.9091007+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"159xn2jt"}}
+{"time":"2024-11-15T17:30:21.9091007+01:00","level":"INFO","msg":"sender: closed","stream_id":"159xn2jt"}
+{"time":"2024-11-15T17:30:21.9096317+01:00","level":"INFO","msg":"stream: closed","id":"159xn2jt"}

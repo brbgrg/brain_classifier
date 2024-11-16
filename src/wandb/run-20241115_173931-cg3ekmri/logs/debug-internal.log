@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:39:31.1392023+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:39:31.1392023+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173931-cg3ekmri\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:39:31.2521721+01:00","level":"INFO","msg":"created new stream","id":"cg3ekmri"}
+{"time":"2024-11-15T17:39:31.2521721+01:00","level":"INFO","msg":"stream: started","id":"cg3ekmri"}
+{"time":"2024-11-15T17:39:31.2521721+01:00","level":"INFO","msg":"sender: started","stream_id":"cg3ekmri"}
+{"time":"2024-11-15T17:39:31.2521721+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"cg3ekmri"}}
+{"time":"2024-11-15T17:39:31.2521721+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"cg3ekmri"}}
+{"time":"2024-11-15T17:39:31.7199181+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:39:56.6060435+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:39:56.6070849+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:39:57.620656+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7841133}],"total_operations":1}}
+{"time":"2024-11-15T17:39:58.900059+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:40:00.316768+01:00","level":"INFO","msg":"stream: closing","id":"cg3ekmri"}
+{"time":"2024-11-15T17:40:00.316768+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"cg3ekmri"}}
+{"time":"2024-11-15T17:40:00.316768+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"cg3ekmri"}}
+{"time":"2024-11-15T17:40:00.316768+01:00","level":"INFO","msg":"sender: closed","stream_id":"cg3ekmri"}
+{"time":"2024-11-15T17:40:00.316768+01:00","level":"INFO","msg":"stream: closed","id":"cg3ekmri"}

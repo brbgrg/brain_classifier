@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:13:39.1708561+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:13:39.1708561+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_171339-80w8jhmx\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:13:39.2898482+01:00","level":"INFO","msg":"created new stream","id":"80w8jhmx"}
+{"time":"2024-11-15T17:13:39.2898482+01:00","level":"INFO","msg":"stream: started","id":"80w8jhmx"}
+{"time":"2024-11-15T17:13:39.2903775+01:00","level":"INFO","msg":"sender: started","stream_id":"80w8jhmx"}
+{"time":"2024-11-15T17:13:39.2903775+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"80w8jhmx"}}
+{"time":"2024-11-15T17:13:39.2903775+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"80w8jhmx"}}
+{"time":"2024-11-15T17:13:39.8941747+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:13:47.6518138+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:13:47.652375+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:13:48.4934817+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:13:48.6568554+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary, console logs","runtime_seconds":0.1629995}],"total_operations":1}}
+{"time":"2024-11-15T17:13:49.9056024+01:00","level":"INFO","msg":"stream: closing","id":"80w8jhmx"}
+{"time":"2024-11-15T17:13:49.9056024+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"80w8jhmx"}}
+{"time":"2024-11-15T17:13:49.9056024+01:00","level":"INFO","msg":"sender: closed","stream_id":"80w8jhmx"}
+{"time":"2024-11-15T17:13:49.9056024+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"80w8jhmx"}}
+{"time":"2024-11-15T17:13:49.9056024+01:00","level":"INFO","msg":"stream: closed","id":"80w8jhmx"}

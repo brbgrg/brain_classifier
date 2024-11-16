@@ -1,0 +1,17 @@
+{"time":"2024-11-15T19:20:53.1976532+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T19:20:53.1976532+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_192053-ee2fzq7m\\logs\\debug-core.log"}
+{"time":"2024-11-15T19:20:53.3210479+01:00","level":"INFO","msg":"created new stream","id":"ee2fzq7m"}
+{"time":"2024-11-15T19:20:53.321561+01:00","level":"INFO","msg":"stream: started","id":"ee2fzq7m"}
+{"time":"2024-11-15T19:20:53.321561+01:00","level":"INFO","msg":"sender: started","stream_id":"ee2fzq7m"}
+{"time":"2024-11-15T19:20:53.321561+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ee2fzq7m"}}
+{"time":"2024-11-15T19:20:53.321561+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ee2fzq7m"}}
+{"time":"2024-11-15T19:20:53.9795086+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T19:21:02.5342714+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T19:21:02.534777+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T19:21:03.5379858+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7393185},{"desc":"uploading config.yaml","runtime_seconds":0.5271754,"progress":"935B/935B"}],"total_operations":2}}
+{"time":"2024-11-15T19:21:03.7378895+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T19:21:05.142865+01:00","level":"INFO","msg":"stream: closing","id":"ee2fzq7m"}
+{"time":"2024-11-15T19:21:05.142865+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ee2fzq7m"}}
+{"time":"2024-11-15T19:21:05.142865+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ee2fzq7m"}}
+{"time":"2024-11-15T19:21:05.1433757+01:00","level":"INFO","msg":"sender: closed","stream_id":"ee2fzq7m"}
+{"time":"2024-11-15T19:21:05.1433757+01:00","level":"INFO","msg":"stream: closed","id":"ee2fzq7m"}

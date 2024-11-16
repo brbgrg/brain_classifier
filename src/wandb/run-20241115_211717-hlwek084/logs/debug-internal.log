@@ -1,0 +1,17 @@
+{"time":"2024-11-15T21:17:17.3262285+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T21:17:17.3262285+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_211717-hlwek084\\logs\\debug-core.log"}
+{"time":"2024-11-15T21:17:17.4426456+01:00","level":"INFO","msg":"created new stream","id":"hlwek084"}
+{"time":"2024-11-15T21:17:17.4426456+01:00","level":"INFO","msg":"stream: started","id":"hlwek084"}
+{"time":"2024-11-15T21:17:17.4431551+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hlwek084"}}
+{"time":"2024-11-15T21:17:17.4431551+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hlwek084"}}
+{"time":"2024-11-15T21:17:17.4439517+01:00","level":"INFO","msg":"sender: started","stream_id":"hlwek084"}
+{"time":"2024-11-15T21:17:18.2832852+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T21:17:26.2735033+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T21:17:26.2740668+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T21:17:27.283895+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.9995307}],"total_operations":1}}
+{"time":"2024-11-15T21:17:28.6411288+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T21:17:29.958851+01:00","level":"INFO","msg":"stream: closing","id":"hlwek084"}
+{"time":"2024-11-15T21:17:29.958851+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hlwek084"}}
+{"time":"2024-11-15T21:17:29.958851+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hlwek084"}}
+{"time":"2024-11-15T21:17:29.958851+01:00","level":"INFO","msg":"sender: closed","stream_id":"hlwek084"}
+{"time":"2024-11-15T21:17:29.9593663+01:00","level":"INFO","msg":"stream: closed","id":"hlwek084"}

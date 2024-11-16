@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:31:37.7591875+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:31:37.7591875+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173137-pei9wbvz\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:31:37.8795299+01:00","level":"INFO","msg":"created new stream","id":"pei9wbvz"}
+{"time":"2024-11-15T17:31:37.8795884+01:00","level":"INFO","msg":"stream: started","id":"pei9wbvz"}
+{"time":"2024-11-15T17:31:37.8795884+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"pei9wbvz"}}
+{"time":"2024-11-15T17:31:37.8795884+01:00","level":"INFO","msg":"sender: started","stream_id":"pei9wbvz"}
+{"time":"2024-11-15T17:31:37.8795884+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"pei9wbvz"}}
+{"time":"2024-11-15T17:31:38.4698821+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:32:05.4743845+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:32:05.4748925+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:32:06.4802822+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8315772,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.0889883,"progress":"5.7KB/5.7KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T17:32:07.7087885+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:32:09.0260542+01:00","level":"INFO","msg":"stream: closing","id":"pei9wbvz"}
+{"time":"2024-11-15T17:32:09.0260542+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"pei9wbvz"}}
+{"time":"2024-11-15T17:32:09.0260542+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"pei9wbvz"}}
+{"time":"2024-11-15T17:32:09.0260542+01:00","level":"INFO","msg":"sender: closed","stream_id":"pei9wbvz"}
+{"time":"2024-11-15T17:32:09.0265892+01:00","level":"INFO","msg":"stream: closed","id":"pei9wbvz"}

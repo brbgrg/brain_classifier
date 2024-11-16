@@ -1,0 +1,17 @@
+{"time":"2024-11-15T17:32:55.9426744+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T17:32:55.9426744+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_173255-a5yflplw\\logs\\debug-core.log"}
+{"time":"2024-11-15T17:32:56.0598995+01:00","level":"INFO","msg":"created new stream","id":"a5yflplw"}
+{"time":"2024-11-15T17:32:56.0598995+01:00","level":"INFO","msg":"stream: started","id":"a5yflplw"}
+{"time":"2024-11-15T17:32:56.0598995+01:00","level":"INFO","msg":"sender: started","stream_id":"a5yflplw"}
+{"time":"2024-11-15T17:32:56.0598995+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"a5yflplw"}}
+{"time":"2024-11-15T17:32:56.0598995+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"a5yflplw"}}
+{"time":"2024-11-15T17:32:56.5617014+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T17:33:16.1553549+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T17:33:16.1563149+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T17:33:17.1707044+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0218903,"subtasks":[{"desc":"best_model_graphs_sc.pth","runtime_seconds":0.2176884,"progress":"4.1KB/4.1KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T17:33:18.7056212+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T17:33:20.0339087+01:00","level":"INFO","msg":"stream: closing","id":"a5yflplw"}
+{"time":"2024-11-15T17:33:20.0339087+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"a5yflplw"}}
+{"time":"2024-11-15T17:33:20.0339087+01:00","level":"INFO","msg":"sender: closed","stream_id":"a5yflplw"}
+{"time":"2024-11-15T17:33:20.0339087+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"a5yflplw"}}
+{"time":"2024-11-15T17:33:20.0345712+01:00","level":"INFO","msg":"stream: closed","id":"a5yflplw"}

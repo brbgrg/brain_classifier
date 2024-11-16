@@ -1,0 +1,17 @@
+{"time":"2024-11-15T19:21:35.0506568+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T19:21:35.0506568+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_192135-nesl1sa0\\logs\\debug-core.log"}
+{"time":"2024-11-15T19:21:35.5724119+01:00","level":"INFO","msg":"created new stream","id":"nesl1sa0"}
+{"time":"2024-11-15T19:21:35.5724119+01:00","level":"INFO","msg":"stream: started","id":"nesl1sa0"}
+{"time":"2024-11-15T19:21:35.5724119+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nesl1sa0"}}
+{"time":"2024-11-15T19:21:35.5724119+01:00","level":"INFO","msg":"sender: started","stream_id":"nesl1sa0"}
+{"time":"2024-11-15T19:21:35.5729234+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"nesl1sa0"}}
+{"time":"2024-11-15T19:21:35.8761748+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T19:22:12.2822776+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T19:22:12.2829048+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T19:22:13.2846093+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.1629827,"progress":"24.6KB/24.6KB"},{"desc":"saving job artifact","runtime_seconds":0.124761}],"total_operations":2}}
+{"time":"2024-11-15T19:22:15.5276262+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T19:22:16.8239978+01:00","level":"INFO","msg":"stream: closing","id":"nesl1sa0"}
+{"time":"2024-11-15T19:22:16.8239978+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"nesl1sa0"}}
+{"time":"2024-11-15T19:22:16.8239978+01:00","level":"INFO","msg":"sender: closed","stream_id":"nesl1sa0"}
+{"time":"2024-11-15T19:22:16.8239978+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"nesl1sa0"}}
+{"time":"2024-11-15T19:22:16.8239978+01:00","level":"INFO","msg":"stream: closed","id":"nesl1sa0"}

@@ -1,0 +1,17 @@
+{"time":"2024-11-15T19:20:32.3297043+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T19:20:32.3297043+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_192032-h5bobiol\\logs\\debug-core.log"}
+{"time":"2024-11-15T19:20:32.4494017+01:00","level":"INFO","msg":"created new stream","id":"h5bobiol"}
+{"time":"2024-11-15T19:20:32.4494017+01:00","level":"INFO","msg":"stream: started","id":"h5bobiol"}
+{"time":"2024-11-15T19:20:32.4494017+01:00","level":"INFO","msg":"sender: started","stream_id":"h5bobiol"}
+{"time":"2024-11-15T19:20:32.4494017+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"h5bobiol"}}
+{"time":"2024-11-15T19:20:32.4494017+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"h5bobiol"}}
+{"time":"2024-11-15T19:20:33.1037278+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T19:20:44.3563789+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T19:20:44.3572475+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T19:20:45.3669331+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8045953,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.0426846,"progress":"5.7KB/5.7KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.6053175,"progress":"942B/942B"}],"total_operations":2}}
+{"time":"2024-11-15T19:20:46.9436512+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T19:20:48.3321048+01:00","level":"INFO","msg":"stream: closing","id":"h5bobiol"}
+{"time":"2024-11-15T19:20:48.3321048+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"h5bobiol"}}
+{"time":"2024-11-15T19:20:48.3321048+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"h5bobiol"}}
+{"time":"2024-11-15T19:20:48.3321048+01:00","level":"INFO","msg":"sender: closed","stream_id":"h5bobiol"}
+{"time":"2024-11-15T19:20:48.332622+01:00","level":"INFO","msg":"stream: closed","id":"h5bobiol"}

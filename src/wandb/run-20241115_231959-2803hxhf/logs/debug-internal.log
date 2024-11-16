@@ -1,0 +1,17 @@
+{"time":"2024-11-15T23:19:59.4514567+01:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-15T23:19:59.4514567+01:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\barbo\\brain classifier repo\\brain_classifier\\src\\wandb\\run-20241115_231959-2803hxhf\\logs\\debug-core.log"}
+{"time":"2024-11-15T23:19:59.5690874+01:00","level":"INFO","msg":"created new stream","id":"2803hxhf"}
+{"time":"2024-11-15T23:19:59.5690874+01:00","level":"INFO","msg":"stream: started","id":"2803hxhf"}
+{"time":"2024-11-15T23:19:59.5690874+01:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"2803hxhf"}}
+{"time":"2024-11-15T23:19:59.5690874+01:00","level":"INFO","msg":"sender: started","stream_id":"2803hxhf"}
+{"time":"2024-11-15T23:19:59.5690874+01:00","level":"INFO","msg":"handler: started","stream_id":{"value":"2803hxhf"}}
+{"time":"2024-11-15T23:20:00.337593+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T23:21:18.6956368+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T23:21:18.6966759+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T23:21:19.6982601+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact best_model_graphs_sc","runtime_seconds":1.0119549,"subtasks":[{"desc":"best_model_graphs_sc.pth","runtime_seconds":0.1958655,"progress":"5.0KB/5.0KB"}]}],"total_operations":1}}
+{"time":"2024-11-15T23:21:23.1378617+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T23:21:24.5276675+01:00","level":"INFO","msg":"stream: closing","id":"2803hxhf"}
+{"time":"2024-11-15T23:21:24.5276675+01:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"2803hxhf"}}
+{"time":"2024-11-15T23:21:24.5276675+01:00","level":"INFO","msg":"sender: closed","stream_id":"2803hxhf"}
+{"time":"2024-11-15T23:21:24.5276675+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"2803hxhf"}}
+{"time":"2024-11-15T23:21:24.5276675+01:00","level":"INFO","msg":"stream: closed","id":"2803hxhf"}
