@@ -1,58 +1,70 @@
-#perform_grid_search.py
-# Kfold cross-validation
+# grid_search.py
 
 import pandas as pd
-import numpy as np
 import torch
 from sklearn.model_selection import ParameterGrid, StratifiedKFold
-from train_and_test import train, validate
-from data_utils import GraphDataset
-from torch.utils.data import DataLoader
+from train_test import train, validate
+from data_preprocessing import GraphDataset, collate_fn
+from dgl.dataloading import GraphDataLoader
 import torch.nn as nn
 import torch.optim as optim
 
-def perform_grid_search(graphs, labels, num_splits, param_grid, batch_size, model_class):
+def perform_grid_search(train_graphs, train_labels, num_splits, param_grid, batch_size, model_class, device):
+    # Get the number of node features from the data
+    num_node_features = train_graphs[0].x.size(1)  # Assuming graphs are PyG Data objects
+
     # Initialize StratifiedKFold
     kf = StratifiedKFold(n_splits=num_splits, shuffle=True, random_state=42)
 
     # Initialize list to store all results
     all_results = []
 
+    # Remove 'in_channels' from param_grid since it's determined by data
+    param_grid = [{k: v for k, v in params.items() if k != 'in_channels'} for params in ParameterGrid(param_grid)]
+
     # Loop over each parameter combination
-    for params in ParameterGrid(param_grid):
+    for params in param_grid:
         num_heads = params['num_heads']
-        in_channels = params['in_channels']
         out_channels = params['out_channels']
         num_epochs = params['num_epochs']
         learning_rate = params['learning_rate']
-        weight_decay = params['weight_decay']  # If weight_decay is in your param_grid
+        weight_decay = params['weight_decay']
 
         # Store per-fold results
         fold_results = []
 
-        for fold, (train_index, val_index) in enumerate(kf.split(graphs, labels)):
+        for fold, (train_index, val_index) in enumerate(kf.split(train_graphs, train_labels)):
             # Split the dataset into training and validation sets for this fold
-            train_data = [graphs[i] for i in train_index]
-            val_data = [graphs[i] for i in val_index]
+            fold_train_data = [train_graphs[i] for i in train_index]
+            fold_val_data = [train_graphs[i] for i in val_index]
 
-            train_labels = [labels[i] for i in train_index]
-            val_labels = [labels[i] for i in val_index]
+            fold_train_labels = [train_labels[i] for i in train_index]
+            fold_val_labels = [train_labels[i] for i in val_index]
 
             # Create PyTorch datasets and data loaders
-            train_dataset = GraphDataset(train_data, train_labels)
-            val_dataset = GraphDataset(val_data, val_labels)
+            fold_train_dataset = GraphDataset(fold_train_data, fold_train_labels)
+            fold_val_dataset = GraphDataset(fold_val_data, fold_val_labels)
 
             # Create data loaders
-            train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-            val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+            fold_train_loader = GraphDataLoader(
+                fold_train_dataset,
+                batch_size=batch_size,
+                shuffle=True,
+                collate_fn=collate_fn
+            )
+            fold_val_loader = GraphDataLoader(
+                fold_val_dataset,
+                batch_size=batch_size,
+                shuffle=False,
+                collate_fn=collate_fn
+            )
 
             # Initialize the model, criterion, and optimizer
-            device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
             model = model_class(
-                in_channels=in_channels,  # Replace with the appropriate value
+                in_channels=num_node_features,
                 out_channels=out_channels,
                 num_heads=num_heads,
-                num_classes=2,  
+                num_classes=2,
             ).to(device)
 
             criterion = nn.CrossEntropyLoss()
@@ -67,8 +79,8 @@ def perform_grid_search(graphs, labels, num_splits, param_grid, batch_size, mode
             val_f1_history = []
 
             for epoch in range(num_epochs):
-                train_loss, train_accuracy, train_f1 = train(train_loader, model, criterion, optimizer, device)
-                val_loss, val_accuracy, val_f1 = validate(val_loader, model, criterion, device)
+                train_loss, train_accuracy, train_f1 = train(fold_train_loader, model, criterion, optimizer, device)
+                val_loss, val_accuracy, val_f1 = validate(fold_val_loader, model, criterion, device)
 
                 # Add metrics to lists
                 train_loss_history.append(train_loss)
@@ -96,9 +108,9 @@ def perform_grid_search(graphs, labels, num_splits, param_grid, batch_size, mode
             fold_results.append(fold_result)
 
             # Clean up to free memory
-            del model_instance
-            del optimizer_instance
-            del criterion_instance
+            del model
+            del optimizer
+            del criterion
             torch.cuda.empty_cache()
 
         # Append fold results to the overall results

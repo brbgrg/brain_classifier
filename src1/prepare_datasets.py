@@ -1,4 +1,4 @@
-# ingestion.py
+# data_ingestion.py
 
 import os
 import numpy as np
@@ -7,6 +7,9 @@ import networkx as nx
 import torch
 from torch_geometric.data import Data
 import scipy.stats
+import copy
+from sklearn.model_selection import train_test_split
+
 
 def load_mat_file(path):
     """Load a .mat file and return the loaded data."""
@@ -56,11 +59,6 @@ def load_all_data(base_dir):
     }
 
     return matrices, mod_deg_zscore, part_coeff, ages
-
-def matrix_to_graph(matrix):
-    """Convert a matrix to a NetworkX graph."""
-    graph = nx.from_numpy_array(matrix)
-    return graph
 
 def calculate_sc_features(matrix, mod_deg_zscore, part_coeff, mod_deg_zscore_fc=None, part_coeff_fc=None):
     """
@@ -155,15 +153,45 @@ def create_graphs_with_features(matrix, feature_tensor=None, feature_type='rando
 
     return graph_list
 
-def prepare_datasets(base_dir):
+def normalize_graph_features(graphs):
     """
-    Prepare datasets by loading data, calculating features, and creating graphs.
+    Normalize the node features of each graph individually.
+    """
+    normalized_graphs = []
+    for graph in graphs:
+        mean = graph.x.mean(dim=0)
+        std = graph.x.std(dim=0) + 1e-8  # To avoid division by zero
+        normalized_x = (graph.x - mean) / std
+        normalized_graph = copy.deepcopy(graph)
+        normalized_graph.x = normalized_x
+        normalized_graphs.append(normalized_graph)
+    return normalized_graphs
+
+def scale_graph_edge_weights(graphs):
+    """
+    Scale the edge weights of each graph individually to [0, 1].
+    """
+    scaled_graphs = []
+    for graph in graphs:
+        edge_weights = graph.edge_attr
+        min_weight = edge_weights.min()
+        max_weight = edge_weights.max()
+        scaled_weights = (edge_weights - min_weight) / (max_weight - min_weight + 1e-8)
+        scaled_graph = copy.deepcopy(graph)
+        scaled_graph.edge_attr = scaled_weights
+        scaled_graphs.append(scaled_graph)
+    return scaled_graphs
+
+def prepare_datasets(base_dir, test_size=0.3, random_state=42):
+    """
+    Prepare datasets by loading data, calculating features, creating graphs,
+    normalizing and scaling them, and splitting into training and testing sets.
 
     Returns:
-    - graphs_sc: List of graphs for structural connectivity.
-    - labels_sc: Corresponding labels for the graphs.
-    - graphs_sc_combined: List of graphs with combined features.
-    - labels_sc_combined: Corresponding labels for the combined graphs.
+    - train_graphs_sc: List of training graphs for structural connectivity.
+    - train_labels_sc: Corresponding labels for the training graphs.
+    - test_graphs_sc: List of testing graphs for structural connectivity.
+    - test_labels_sc: Corresponding labels for the testing graphs.
     - feature_names: Names of the features calculated.
     """
     # Load data
@@ -181,22 +209,6 @@ def prepare_datasets(base_dir):
         part_coeff['sc_oa']
     )
 
-    # Calculate combined features (including functional connectivity features)
-    features_combined_ya = calculate_sc_features(
-        matrices['sc_ya'],
-        mod_deg_zscore['sc_ya'],
-        part_coeff['sc_ya'],
-        mod_deg_zscore_fc=mod_deg_zscore['fc_ya'],
-        part_coeff_fc=part_coeff['fc_ya']
-    )
-    features_combined_oa = calculate_sc_features(
-        matrices['sc_oa'],
-        mod_deg_zscore['sc_oa'],
-        part_coeff['sc_oa'],
-        mod_deg_zscore_fc=mod_deg_zscore['fc_oa'],
-        part_coeff_fc=part_coeff['fc_oa']
-    )
-
     # Create graphs with features
     graphs_with_features = {
         'sc_ya': create_graphs_with_features(
@@ -205,23 +217,22 @@ def prepare_datasets(base_dir):
         'sc_oa': create_graphs_with_features(
             matrices['sc_oa'], feature_tensor=features_sc_oa[0]
         ),
-        'sc_combined_ya': create_graphs_with_features(
-            matrices['sc_ya'], feature_tensor=features_combined_ya[0]
-        ),
-        'sc_combined_oa': create_graphs_with_features(
-            matrices['sc_oa'], feature_tensor=features_combined_oa[0]
-        ),
     }
 
     # Combine young and old adult graphs and labels
     graphs_sc = graphs_with_features['sc_ya'] + graphs_with_features['sc_oa']
     labels_sc = [0] * len(graphs_with_features['sc_ya']) + [1] * len(graphs_with_features['sc_oa'])
 
-    graphs_sc_combined = graphs_with_features['sc_combined_ya'] + graphs_with_features['sc_combined_oa']
-    labels_sc_combined = [0] * len(graphs_with_features['sc_combined_ya']) + [1] * len(graphs_with_features['sc_combined_oa'])
-
     # Feature names
     feature_names = features_sc_ya[1]
 
-    return graphs_sc, labels_sc, graphs_sc_combined, labels_sc_combined, feature_names
+    # Normalize and scale graphs before splitting
+    graphs_sc = normalize_graph_features(graphs_sc)
+    graphs_sc = scale_graph_edge_weights(graphs_sc)
 
+    # Split into training and testing sets
+    train_graphs_sc, test_graphs_sc, train_labels_sc, test_labels_sc = train_test_split(
+        graphs_sc, labels_sc, test_size=test_size, random_state=random_state, stratify=labels_sc
+    )
+
+    return train_graphs_sc, train_labels_sc, test_graphs_sc, test_labels_sc, feature_names

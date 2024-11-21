@@ -7,6 +7,7 @@ import networkx as nx
 import torch
 from torch_geometric.data import Data
 import scipy.stats
+import copy
 
 def load_mat_file(path):
     """Load a .mat file and return the loaded data."""
@@ -155,6 +156,35 @@ def create_graphs_with_features(matrix, feature_tensor=None, feature_type='rando
 
     return graph_list
 
+def normalize_graph_features(graphs):
+    """
+    Normalize the node features of each graph individually.
+    """
+    normalized_graphs = []
+    for graph in graphs:
+        mean = graph.x.mean(dim=0)
+        std = graph.x.std(dim=0) + 1e-8  # To avoid division by zero
+        normalized_x = (graph.x - mean) / std
+        normalized_graph = copy.deepcopy(graph)
+        normalized_graph.x = normalized_x
+        normalized_graphs.append(normalized_graph)
+    return normalized_graphs
+
+def scale_graph_edge_weights(graphs):
+    """
+    Scale the edge weights of each graph individually to [0, 1].
+    """
+    scaled_graphs = []
+    for graph in graphs:
+        edge_weights = graph.edge_attr
+        min_weight = edge_weights.min()
+        max_weight = edge_weights.max()
+        scaled_weights = (edge_weights - min_weight) / (max_weight - min_weight + 1e-8)
+        scaled_graph = copy.deepcopy(graph)
+        scaled_graph.edge_attr = scaled_weights
+        scaled_graphs.append(scaled_graph)
+    return scaled_graphs
+
 def prepare_datasets(base_dir):
     """
     Prepare datasets by loading data, calculating features, and creating graphs.
@@ -223,5 +253,11 @@ def prepare_datasets(base_dir):
     # Feature names
     feature_names = features_sc_ya[1]
 
-    return graphs_sc, labels_sc, graphs_sc_combined, labels_sc_combined, feature_names
+    # Normalize and scale graphs before splitting
+    graphs_sc = normalize_graph_features(graphs_sc)
+    graphs_sc = scale_graph_edge_weights(graphs_sc)
 
+    graphs_sc_combined = normalize_graph_features(graphs_sc_combined)
+    graphs_sc_combined = scale_graph_edge_weights(graphs_sc_combined)
+
+    return graphs_sc, labels_sc, graphs_sc_combined, labels_sc_combined, feature_names
