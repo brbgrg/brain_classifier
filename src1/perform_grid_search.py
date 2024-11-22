@@ -125,9 +125,12 @@ def perform_grid_search(train_graphs, train_labels, num_splits, param_grid, batc
 
     # Find the best hyperparameters based on average validation F1 score
     best_row = avg_results_df.loc[avg_results_df['val_f1'].idxmax()]
+    #best_row = results_df.loc[results_df['val_f1'].idxmax()]
     best_params = best_row[hyperparams].to_dict()
     best_val_f1 = best_row['val_f1']
     best_val_accuracy = best_row['val_accuracy']
+
+  
 
     # Return the best parameters and the results DataFrame
     return best_params, best_val_f1, best_val_accuracy, results_df

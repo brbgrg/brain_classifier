@@ -10,7 +10,6 @@ import scipy.stats
 import copy
 from sklearn.model_selection import train_test_split
 
-
 def load_mat_file(path):
     """Load a .mat file and return the loaded data."""
     data = scipy.io.loadmat(path)
@@ -77,7 +76,7 @@ def calculate_sc_features(matrix, mod_deg_zscore, part_coeff, mod_deg_zscore_fc=
     """
     num_subjects = matrix.shape[2]
     all_subjects_features = []
-    feature_names = ['mean', 'std', 'skewness', 'kurtosis', 'mod_deg_zscore', 'part_coeff']
+    feature_names = ['mean', 'std', 'skewness', 'kurtosis', 'mod_deg_zscore_sc', 'part_coeff_sc']
 
     if mod_deg_zscore_fc is not None and part_coeff_fc is not None:
         feature_names += ['mod_deg_zscore_fc', 'part_coeff_fc']
@@ -92,12 +91,12 @@ def calculate_sc_features(matrix, mod_deg_zscore, part_coeff, mod_deg_zscore_fc=
                 scipy.stats.skew(connections),
                 scipy.stats.kurtosis(connections)
             ]
-            mod_part = [mod_deg_zscore[i, s], part_coeff[i, s]]
-            sc_features = stats + mod_part
+            mod_part_sc = [mod_deg_zscore[i, s], part_coeff[i, s]]
+            sc_features = stats + mod_part_sc
 
             if mod_deg_zscore_fc is not None and part_coeff_fc is not None:
-                fc_features = [mod_deg_zscore_fc[i, s], part_coeff_fc[i, s]]
-                combined_features = sc_features + fc_features
+                mod_part_fc = [mod_deg_zscore_fc[i, s], part_coeff_fc[i, s]]
+                combined_features = sc_features + mod_part_fc
                 node_features.append(combined_features)
             else:
                 node_features.append(sc_features)
@@ -182,57 +181,105 @@ def scale_graph_edge_weights(graphs):
         scaled_graphs.append(scaled_graph)
     return scaled_graphs
 
-def prepare_datasets(base_dir, test_size=0.3, random_state=42):
+def prepare_datasets(base_dir, test_size=0.15, random_state=42):
     """
     Prepare datasets by loading data, calculating features, creating graphs,
     normalizing and scaling them, and splitting into training and testing sets.
 
     Returns:
-    - train_graphs_sc: List of training graphs for structural connectivity.
-    - train_labels_sc: Corresponding labels for the training graphs.
-    - test_graphs_sc: List of testing graphs for structural connectivity.
-    - test_labels_sc: Corresponding labels for the testing graphs.
-    - feature_names: Names of the features calculated.
+    - datasets: A dictionary containing the following keys:
+        - 'train_graphs_sc': Training graphs with SC features only.
+        - 'train_labels_sc': Corresponding labels for the SC training graphs.
+        - 'test_graphs_sc': Testing graphs with SC features only.
+        - 'test_labels_sc': Corresponding labels for the SC testing graphs.
+        - 'train_graphs_sc_fc': Training graphs with combined SC and FC features.
+        - 'train_labels_sc_fc': Corresponding labels for the combined training graphs.
+        - 'test_graphs_sc_fc': Testing graphs with combined SC and FC features.
+        - 'test_labels_sc_fc': Corresponding labels for the combined testing graphs.
+    - feature_names_sc: Names of the SC features calculated.
+    - feature_names_combined: Names of the combined features calculated.
     """
     # Load data
     matrices, mod_deg_zscore, part_coeff, ages = load_all_data(base_dir)
 
     # Calculate node features for structural connectivity
-    features_sc_ya = calculate_sc_features(
+    features_sc_ya, feature_names_sc = calculate_sc_features(
         matrices['sc_ya'],
         mod_deg_zscore['sc_ya'],
         part_coeff['sc_ya']
     )
-    features_sc_oa = calculate_sc_features(
+    features_sc_oa, _ = calculate_sc_features(
         matrices['sc_oa'],
         mod_deg_zscore['sc_oa'],
         part_coeff['sc_oa']
     )
 
+    # Calculate combined features (including functional connectivity features)
+    features_combined_ya, feature_names_combined = calculate_sc_features(
+        matrices['sc_ya'],
+        mod_deg_zscore['sc_ya'],
+        part_coeff['sc_ya'],
+        mod_deg_zscore_fc=mod_deg_zscore['fc_ya'],
+        part_coeff_fc=part_coeff['fc_ya']
+    )
+    features_combined_oa, _ = calculate_sc_features(
+        matrices['sc_oa'],
+        mod_deg_zscore['sc_oa'],
+        part_coeff['sc_oa'],
+        mod_deg_zscore_fc=mod_deg_zscore['fc_oa'],
+        part_coeff_fc=part_coeff['fc_oa']
+    )
+
     # Create graphs with features
     graphs_with_features = {
         'sc_ya': create_graphs_with_features(
-            matrices['sc_ya'], feature_tensor=features_sc_ya[0]
+            matrices['sc_ya'], feature_tensor=features_sc_ya
         ),
         'sc_oa': create_graphs_with_features(
-            matrices['sc_oa'], feature_tensor=features_sc_oa[0]
+            matrices['sc_oa'], feature_tensor=features_sc_oa
+        ),
+        'sc_combined_ya': create_graphs_with_features(
+            matrices['sc_ya'], feature_tensor=features_combined_ya
+        ),
+        'sc_combined_oa': create_graphs_with_features(
+            matrices['sc_oa'], feature_tensor=features_combined_oa
         ),
     }
 
-    # Combine young and old adult graphs and labels
+    # Combine young and old adult graphs and labels for SC features
     graphs_sc = graphs_with_features['sc_ya'] + graphs_with_features['sc_oa']
     labels_sc = [0] * len(graphs_with_features['sc_ya']) + [1] * len(graphs_with_features['sc_oa'])
 
-    # Feature names
-    feature_names = features_sc_ya[1]
+    # Combine young and old adult graphs and labels for combined features
+    graphs_sc_fc = graphs_with_features['sc_combined_ya'] + graphs_with_features['sc_combined_oa']
+    labels_sc_fc = [0] * len(graphs_with_features['sc_combined_ya']) + [1] * len(graphs_with_features['sc_combined_oa'])
 
     # Normalize and scale graphs before splitting
     graphs_sc = normalize_graph_features(graphs_sc)
     graphs_sc = scale_graph_edge_weights(graphs_sc)
 
-    # Split into training and testing sets
+    graphs_sc_fc = normalize_graph_features(graphs_sc_fc)
+    graphs_sc_fc = scale_graph_edge_weights(graphs_sc_fc)
+
+    # Split into training and testing sets for SC features
     train_graphs_sc, test_graphs_sc, train_labels_sc, test_labels_sc = train_test_split(
         graphs_sc, labels_sc, test_size=test_size, random_state=random_state, stratify=labels_sc
     )
 
-    return train_graphs_sc, train_labels_sc, test_graphs_sc, test_labels_sc, feature_names
+    # Split into training and testing sets for combined features
+    train_graphs_sc_fc, test_graphs_sc_fc, train_labels_sc_fc, test_labels_sc_fc = train_test_split(
+        graphs_sc_fc, labels_sc_fc, test_size=test_size, random_state=random_state, stratify=labels_sc_fc
+    )
+
+    datasets = {
+        'train_graphs_sc': train_graphs_sc,
+        'train_labels_sc': train_labels_sc,
+        'test_graphs_sc': test_graphs_sc,
+        'test_labels_sc': test_labels_sc,
+        'train_graphs_sc_fc': train_graphs_sc_fc,
+        'train_labels_sc_fc': train_labels_sc_fc,
+        'test_graphs_sc_fc': test_graphs_sc_fc,
+        'test_labels_sc_fc': test_labels_sc_fc
+    }
+
+    return datasets, feature_names_sc, feature_names_combined
