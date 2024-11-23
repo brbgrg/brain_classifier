@@ -102,8 +102,6 @@ def plot_hyperparameter_heatmaps(results_df, hyperparameters, metric='val_f1'):
     plt.show()
 
 
-
-
 def plot_uniform_hyperparameter_heatmaps(results_df, hyperparameters, metric='val_f1'):
     """
     Plots heatmaps for pairwise combinations of hyperparameters to show the influence on the specified metric,
@@ -182,6 +180,8 @@ def plot_hyperparameter_scatterplots_with_regression(results_df, hyperparameters
 
     plt.tight_layout()
     plt.show()
+
+
 
 
 def plot_parallel_coordinates(results_df, hyperparameters, metric='val_f1', top_percentile=None):

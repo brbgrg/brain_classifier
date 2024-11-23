@@ -1,15 +1,13 @@
-# grid_search.py
-
 import pandas as pd
 import torch
 from sklearn.model_selection import ParameterGrid, StratifiedKFold
 from train_test import train, validate
-from data_preprocessing import GraphDataset, collate_fn
-from dgl.dataloading import GraphDataLoader
+from build_dataloader import GraphDataset, build_dataloader, set_seed
 import torch.nn as nn
 import torch.optim as optim
 
 def perform_grid_search(train_graphs, train_labels, num_splits, param_grid, batch_size, model_class, device):
+    set_seed(42)
     # Get the number of node features from the data
     num_node_features = train_graphs[0].x.size(1)  # Assuming graphs are PyG Data objects
 
@@ -46,18 +44,8 @@ def perform_grid_search(train_graphs, train_labels, num_splits, param_grid, batc
             fold_val_dataset = GraphDataset(fold_val_data, fold_val_labels)
 
             # Create data loaders
-            fold_train_loader = GraphDataLoader(
-                fold_train_dataset,
-                batch_size=batch_size,
-                shuffle=True,
-                collate_fn=collate_fn
-            )
-            fold_val_loader = GraphDataLoader(
-                fold_val_dataset,
-                batch_size=batch_size,
-                shuffle=False,
-                collate_fn=collate_fn
-            )
+            fold_train_loader = build_dataloader(fold_train_dataset, batch_size=batch_size, shuffle=True)
+            fold_val_loader = build_dataloader(fold_val_dataset, batch_size=batch_size, shuffle=False)
 
             # Initialize the model, criterion, and optimizer
             model = model_class(
@@ -125,12 +113,9 @@ def perform_grid_search(train_graphs, train_labels, num_splits, param_grid, batc
 
     # Find the best hyperparameters based on average validation F1 score
     best_row = avg_results_df.loc[avg_results_df['val_f1'].idxmax()]
-    #best_row = results_df.loc[results_df['val_f1'].idxmax()]
     best_params = best_row[hyperparams].to_dict()
     best_val_f1 = best_row['val_f1']
     best_val_accuracy = best_row['val_accuracy']
-
-  
 
     # Return the best parameters and the results DataFrame
     return best_params, best_val_f1, best_val_accuracy, results_df

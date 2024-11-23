@@ -28,7 +28,8 @@ def to_dgl(pyg_data):
     """Convert PyTorch Geometric Data to DGLGraph."""
     g = dgl.graph((pyg_data.edge_index[0], pyg_data.edge_index[1]))
     g.ndata['feat'] = pyg_data.x
-    g.edata['weight'] = pyg_data.edge_attr
+    if pyg_data.edge_attr is not None:
+        g.edata['weight'] = pyg_data.edge_attr
     return g
 
 class GraphDataset(Dataset):
@@ -49,3 +50,26 @@ def collate_fn(batch):
     batched_graph = dgl.batch(graphs)
     labels = torch.tensor(labels)
     return batched_graph, labels
+
+def build_dataloader(dataset, batch_size, shuffle=True):
+    """
+    Creates a GraphDataLoader with preset collate_fn and seed_worker.
+    Args:
+        dataset (Dataset): The dataset to load.
+        batch_size (int): Number of samples per batch.
+        shuffle (bool, optional): Whether to shuffle the data. Defaults to True.
+    Returns:
+        DataLoader: A DataLoader instance.
+    """
+    # Optionally set up the generator for reproducibility
+    generator = torch.Generator()
+    generator.manual_seed(42)
+    
+    return GraphDataLoader(
+        dataset,
+        batch_size=batch_size,
+        shuffle=shuffle,
+        collate_fn=collate_fn,
+        generator=generator,
+        worker_init_fn=seed_worker
+    )
