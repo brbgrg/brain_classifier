@@ -8,6 +8,7 @@ from model import GAT
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
+
 def train_model_with_early_stopping(graphs, labels, dataset_name, best_params, patience, max_epochs, batch_size, device):
     """
     Trains the model with the best hyperparameters using early stopping and plots training curves.
