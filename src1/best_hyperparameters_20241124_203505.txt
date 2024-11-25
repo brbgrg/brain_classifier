@@ -1,0 +1,8 @@
+Best Hyperparameters:
+num_heads: 2.0
+out_channels: 8.0
+learning_rate: 0.01
+weight_decay: 0.0
+Average number of epochs trained: 5
+Best Validation F1 Score: 0.6336952842971009
+Best Validation Accuracy: 0.6842105263157895
