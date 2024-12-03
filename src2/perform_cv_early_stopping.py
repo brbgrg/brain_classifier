@@ -5,11 +5,12 @@ import matplotlib.pyplot as plt
 from train_test import train, validate
 from build_dataloader import build_dataloader, set_seed, GraphDataset
 from prepare_datasets import compute_feature_means_stds, compute_edge_attr_means_stds, normalize_graph_features, normalize_graph_edge_weights
-from model import GAT
 import pandas as pd
 import numpy as np  
 from sklearn.model_selection import ParameterGrid, StratifiedKFold
 from datetime import datetime
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, roc_auc_score, roc_curve, precision_recall_curve
+import seaborn as sns
 
 def perform_cv_early_stopping(
     train_graphs,
@@ -49,6 +50,9 @@ def perform_cv_early_stopping(
 
         # Store per-fold final metrics
         fold_results = []
+
+        # Define class names
+        class_names = ["young adult", "old adult"]
 
         for fold, (train_index, val_index) in enumerate(kf.split(train_graphs, train_labels)):
             print(f"Starting fold {fold + 1}/{num_splits}")
@@ -93,7 +97,7 @@ def perform_cv_early_stopping(
             best_val_loss_fold = float('inf')
             best_epoch = 0
             epochs_without_improvement = 0
-            delta = 1e-4  # Minimum change to qualify as an improvement
+            delta = 0.01  # Increased delta to allow early stopping
 
             # Initialize metrics for this fold
             metrics = {
@@ -108,7 +112,7 @@ def perform_cv_early_stopping(
 
             for epoch in range(1, max_epochs + 1):
                 train_loss, train_accuracy, train_f1 = train(fold_train_loader, model, criterion, optimizer, device)
-                val_loss, val_accuracy, val_f1 = validate(fold_val_loader, model, criterion, device)
+                val_loss, val_accuracy, val_f1, val_preds, val_true, val_probs = validate(fold_val_loader, model, criterion, device)
 
                 # Add metrics to lists
                 metrics['train_loss'].append(train_loss)
@@ -155,7 +159,10 @@ def perform_cv_early_stopping(
                 'train_accuracy': best_train_accuracy,
                 'val_accuracy': best_val_accuracy,
                 'train_f1': best_train_f1,
-                'val_f1': best_val_f1
+                'val_f1': best_val_f1,
+                'val_preds': val_preds,
+                'val_true': val_true,
+                'val_probs': val_probs
             }
             fold_results.append(fold_result)
 
@@ -167,6 +174,26 @@ def perform_cv_early_stopping(
 
         # Append fold results to the overall results
         all_results.extend(fold_results)
+
+        # Aggregate predictions and true labels
+        all_val_preds = []
+        all_val_true = []
+        all_val_probs = []
+        for result in all_results:
+            all_val_preds.extend(result['val_preds'])
+            all_val_true.extend(result['val_true'])
+            all_val_probs.extend(result['val_probs'])
+
+        # Compute confusion matrix
+        cm = confusion_matrix(all_val_true, all_val_preds)
+        # Compute additional metrics
+        precision = precision_score(all_val_true, all_val_preds, average='weighted')
+        recall = recall_score(all_val_true, all_val_preds, average='weighted')
+        roc_auc = roc_auc_score(all_val_true, all_val_probs)
+
+        # Compute ROC and Precision-Recall curves
+        fpr, tpr, roc_thresholds = roc_curve(all_val_true, all_val_probs)
+        precision_curve, recall_curve, pr_thresholds = precision_recall_curve(all_val_true, all_val_probs)
 
         # Identify the best fold based on validation F1 score
         best_fold_idx = np.argmax([fr['val_f1'] for fr in fold_results])
@@ -194,7 +221,18 @@ def perform_cv_early_stopping(
             'avg_metrics': avg_metrics,
             'best_fold_metrics': best_fold_metrics,
             'fold_metrics_list': fold_metrics_list,  # For individual fold plots
-            'best_epoch': np.mean([fr['best_epoch'] for fr in fold_results])  # Average best epoch across folds
+            'best_epoch': np.mean([fr['best_epoch'] for fr in fold_results]),  # Average best epoch across folds
+            'cm': cm,
+            'precision': precision,
+            'recall': recall,
+            'roc_auc': roc_auc,
+            'fpr': fpr,
+            'tpr': tpr,
+            'roc_thresholds': roc_thresholds,
+            'precision_curve': precision_curve,
+            'recall_curve': recall_curve,
+            'pr_thresholds': pr_thresholds,
+            'class_names': class_names
         })
             
     # Now, plot all hyperparameter combinations in a single figure
@@ -305,8 +343,67 @@ def perform_cv_early_stopping(
     fig.savefig(f'metrics_{timestamp}.png')
     plt.close(fig)
 
+
+
+    # Plot additional metrics in a new figure
+    fig2, axes2 = plt.subplots(n_combinations, 3, figsize=(18, 6 * n_combinations))
+
+    if n_combinations == 1:
+        axes2 = np.expand_dims(axes2, axis=0)
+
+    for idx, data in enumerate(metrics_per_combination):
+        hyperparams = data['hyperparams']
+        hyperparam_text = (
+            f"num_heads={hyperparams['num_heads']}, out_channels={hyperparams['out_channels']}, "
+            f"lr={hyperparams['learning_rate']}, wd={hyperparams['weight_decay']}"
+        )
+
+        # Plot Confusion Matrix
+        ax = axes2[idx, 0]
+        cm = data['cm']
+        class_names = data['class_names']
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax, xticklabels=class_names, yticklabels=class_names)
+        ax.set_xlabel('Predicted')
+        ax.set_ylabel('True')
+        ax.set_title('Confusion Matrix')
+        ax.text(0.5, -0.12, hyperparam_text, transform=ax.transAxes, ha='center', fontsize=10)
+
+        # Plot Precision-Recall Curve
+        ax = axes2[idx, 1]
+        precision_curve = data['precision_curve']
+        recall_curve = data['recall_curve']
+        ax.plot(recall_curve, precision_curve, label='Precision-Recall curve')
+        ax.set_xlabel('Recall')
+        ax.set_ylabel('Precision')
+        ax.set_title('Precision-Recall Curve')
+        ax.legend()
+        ax.grid(True)
+
+        # Plot ROC Curve
+        ax = axes2[idx, 2]
+        fpr = data['fpr']
+        tpr = data['tpr']
+        roc_auc = data['roc_auc']
+        ax.plot(fpr, tpr, label=f'ROC curve (area = {roc_auc:.2f})')
+        ax.plot([0, 1], [0, 1], 'k--')  # Diagonal line
+        ax.set_xlabel('False Positive Rate')
+        ax.set_ylabel('True Positive Rate')
+        ax.set_title('ROC Curve')
+        ax.legend()
+        ax.grid(True)
+
+    plt.tight_layout()
+    plt.show()
+
+    # Save the figure
+    fig2.savefig(f'additional_metrics_{timestamp}.png')
+    plt.close(fig2)
+
     # Create a DataFrame from all_results
     results_df = pd.DataFrame(all_results)
+
+    # Exclude columns with list values
+    results_df = results_df.drop(columns=['val_preds', 'val_true', 'val_probs'])
 
     # Compute average metrics across folds for each parameter combination
     hyperparams = ['num_heads', 'out_channels', 'learning_rate', 'weight_decay']

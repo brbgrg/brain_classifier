@@ -35,7 +35,8 @@ def validate(val_loader, model, criterion, device):
     total_loss = 0
     all_preds = []
     all_labels = []
-    with torch.no_grad(): # prevent building unnecessary computational graphs that consume memory
+    all_probs = []
+    with torch.no_grad():  # prevent building unnecessary computational graphs that consume memory
         for batch_idx, (data, labels) in enumerate(val_loader):
             data = data.to(device)
             labels = labels.to(device)
@@ -45,12 +46,14 @@ def validate(val_loader, model, criterion, device):
             loss = criterion(out, labels)
             total_loss += loss.item()
             pred = out.argmax(dim=-1)
+            probs = torch.softmax(out, dim=1)[:, 1]  # Probability of positive class
             all_preds.extend(pred.cpu().numpy())
+            all_probs.extend(probs.cpu().numpy())
             all_labels.extend(labels.cpu().numpy())
     avg_loss = total_loss / len(val_loader)
     accuracy = accuracy_score(all_labels, all_preds)
     f1 = f1_score(all_labels, all_preds, average='weighted')
-    return avg_loss, accuracy, f1
+    return avg_loss, accuracy, f1, all_preds, all_labels, all_probs
 
 # Evaluation function
 def test(test_loader, model, criterion, device):

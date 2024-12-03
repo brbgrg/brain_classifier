@@ -15,7 +15,7 @@ def test_model(model_path, graphs, labels, model_class, train_mean_x, train_std_
     model = model_class(
         in_channels=config.in_channels,
         out_channels=config.out_channels,
-        num_heads = config.get('num_heads', 1),
+        num_heads = getattr(config, 'num_heads', 1),
         num_classes=2
     ).to(device)
 
